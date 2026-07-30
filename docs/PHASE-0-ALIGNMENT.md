@@ -1,6 +1,19 @@
 # Phase 0 — Alignment
 
-**Status: PROPOSED, awaiting sign-off. No implementation code exists yet, by design.**
+**Status: SIGNED OFF 2026-07-30. No implementation code exists yet, by design — D1 is next.**
+
+Four blocking questions were put and answered, all as recommended:
+
+| # | Question | Answer |
+|---|---|---|
+| 1 | Stack | **Kotlin + Compose**, native single-target (ADR-001) |
+| 2 | v1 scope | **Mumbai-first**, multi-currency/multi-trip in schema only, splits at M4 (ADR-005) |
+| 3 | Places acceptance bar | **Source-backed; the count follows the evidence.** Unsourced fields ship empty, never guessed. A verification report with the per-cluster confidence distribution is part of the M2a deliverable, and the confidence distribution — not the raw count — is the bar |
+| 4 | Process | **Merged**: two lean decision records, then M0 running code, then one shipping phase per response |
+
+One question remains open and is not blocking: **trip dates.** If departure is inside eight weeks I
+re-order the phases so the places dataset (M2a) and the offline Colaba pack land before you fly, and
+the summary/charts polish (M4) slips behind them.
 
 Two briefs were supplied. They agree on the product and disagree on the stack. This document
 resolves the disagreements, states every assumption I am running on, names the three things in

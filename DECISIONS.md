@@ -3,11 +3,11 @@
 Every entry: **what** was chosen, **why**, the **strongest rejected** alternative, and the
 **cost** the choice imposes later. Newest last. Entries added in the phase that made them.
 
-Status legend: `PROPOSED` (awaiting sign-off) · `ACCEPTED` · `SUPERSEDED by ADR-nnn`.
+Status legend: `PROPOSED` · `ACCEPTED` · `SUPERSEDED by ADR-nnn`.
 
 ---
 
-## ADR-001 — Kotlin + Jetpack Compose, not Expo/React Native · PROPOSED
+## ADR-001 — Kotlin + Jetpack Compose, not Expo/React Native · ACCEPTED 2026-07-30
 
 **Chose:** a single-target native Android app: Kotlin, Compose, Room, Hilt.
 
@@ -28,7 +28,7 @@ once instead of installed; UI iteration is a Gradle build rather than a fast ref
 
 ---
 
-## ADR-002 — No routing server, and no offline turn-by-turn in v1 · PROPOSED
+## ADR-002 — No routing server, and no offline turn-by-turn in v1 · ACCEPTED 2026-07-30
 
 **Chose:** a `RoutingProvider` interface with a straight-line estimator for "build my day", plus
 one-tap handoff to any installed nav app via `geo:` / `google.navigation:` intents, plus
@@ -48,7 +48,7 @@ behind the same interface at M2.
 
 ---
 
-## ADR-003 — Tiles as bundled + downloadable PMTiles from an OSM extract · PROPOSED
+## ADR-003 — Tiles as bundled + downloadable PMTiles from an OSM extract · ACCEPTED 2026-07-30
 
 **Chose:** MapLibre Native reading PMTiles generated with Tilemaker from a Geofabrik extract; a
 ~6 MB Colaba/Fort pack bundled in the APK, regional packs as resumable `WorkManager` downloads.
@@ -64,7 +64,7 @@ drive eviction; and generating them is a build step someone has to be able to re
 
 ---
 
-## ADR-004 — Arbitrary category depth, not a cap of 3 · PROPOSED
+## ADR-004 — Arbitrary category depth, not a cap of 3 · ACCEPTED 2026-07-30
 
 **Chose:** `categories.parent_id` self-FK with recursive-CTE roll-ups, indexed, tested to depth 6.
 No hard depth cap. Deleting a node reparents its children to the node's parent and reassigns its
@@ -84,7 +84,7 @@ amplification and a second thing to keep consistent.
 
 ---
 
-## ADR-005 — Splits deferred from the M0 slice to M4; schema ships in M0 · PROPOSED
+## ADR-005 — Splits deferred from the M0 slice to M4; schema ships in M0 · ACCEPTED 2026-07-30
 
 **Chose:** `people` and `expense_splits` tables exist from the first migration; settle-up UI lands
 at M4.
@@ -100,7 +100,7 @@ until M4, so the schema shape is an educated guess rather than a validated one.
 
 ---
 
-## ADR-006 — No crash reporter, no analytics, no Play Integrity · PROPOSED
+## ADR-006 — No crash reporter, no analytics, no Play Integrity · ACCEPTED 2026-07-30
 
 **Chose:** zero third-party SDKs. No Sentry, no attribution, no integrity attestation. A local-only
 crash breadcrumb file in app-private storage, surfaced on a debug screen.
@@ -117,7 +117,7 @@ consciously accepted risk rather than quietly dropped.
 
 ---
 
-## ADR-007 — minSdk 29, above both briefs' suggested 26 · PROPOSED
+## ADR-007 — minSdk 29, above both briefs' suggested 26 · ACCEPTED 2026-07-30
 
 **Chose:** `minSdk 29` (Android 10), `targetSdk 36`.
 
