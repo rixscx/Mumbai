@@ -128,3 +128,50 @@ branch from the photo, receipt and export paths — the exact code where a bug b
 
 **Costs later:** excludes Android 8–9 devices; if that matters the fallbacks come back and the
 privacy surface widens with them.
+
+---
+
+## ADR-008 — Re-cut to an 8-day pre-trip sprint; sideload, not Play · ACCEPTED 2026-07-30
+
+**Chose:** abandon the 12-week phase plan for the pre-trip window. Ship in four short phases
+(dataset → money → places/map → harden) by 7 Aug, distributed as a **release-signed sideloaded
+APK**. The 12-week plan resumes 18 August, informed by the trip.
+
+**Why:** two IRCTC tickets set the real deadline — boarding at Mysuru 06:15 on 09 Aug, which is 10
+days out, with 8 usable working days. Play review latency alone could consume that window, and an
+app that arrives on 20 August is worth nothing to a trip that ended on the 17th. Release-signed
+rather than debug because the app holds money and location data.
+
+**Rejected:** keeping the original ordering and accepting that nothing is usable for this trip —
+defensible if the goal were the product rather than the trip, and it is not. Also rejected: a Play
+internal-testing track pre-trip, on latency grounds alone.
+
+**Costs later:** the UI will be less finished than the design plan describes; the screenshot suite,
+Macrobenchmark, splits, charts and locales all slip past the trip; and a sideloaded release build
+needs a keystore that must survive, or in-place upgrades become impossible without wiping the
+database.
+
+---
+
+## ADR-009 — GitHub Actions is the compiler; `:domain` stays JVM-only · ACCEPTED 2026-07-30
+
+**Chose:** all Android build and instrumentation claims come from CI runs whose logs are readable;
+the installable APK is a CI artifact. The `:domain` module keeps **zero Android imports** so it
+builds and tests locally in this container.
+
+**Why:** verified in-session, not assumed — this container has JDK 21 and Gradle but no Android
+SDK, and the environment's network policy denies `dl.google.com` at the proxy (403 on `CONNECT`).
+`maven.google.com` only 301-redirects there, so AGP, AndroidX, Compose, Room and Hilt are all
+unreachable and there is no `aapt2`/`d8` regardless. Maven Central, `services.gradle.org` and
+`plugins.gradle.org` are reachable. CI runners have the SDK and can reach Google's Maven.
+
+**Rejected:** an unofficial SDK mirror or a vendored AndroidX cache. For an app holding financial
+and location data, pulling the toolchain from an unverified mirror is a supply-chain decision that
+cannot be justified to save a build step. Also rejected: writing the Android code and *claiming* it
+compiles — the briefs prohibit exactly that.
+
+**Costs later:** iteration is minutes-per-build with no interactive debugger and no way to look at a
+running app from here; UI defects will be found by you on-device rather than by me. This makes the
+architecture rule "domain has zero Android imports" load-bearing rather than stylistic — the more
+logic that lives in `:domain`, the more of this project is actually testable before it reaches a
+phone.

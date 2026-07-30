@@ -11,9 +11,10 @@ Four blocking questions were put and answered, all as recommended:
 | 3 | Places acceptance bar | **Source-backed; the count follows the evidence.** Unsourced fields ship empty, never guessed. A verification report with the per-cluster confidence distribution is part of the M2a deliverable, and the confidence distribution — not the raw count — is the bar |
 | 4 | Process | **Merged**: two lean decision records, then M0 running code, then one shipping phase per response |
 
-One question remains open and is not blocking: **trip dates.** If departure is inside eight weeks I
-re-order the phases so the places dataset (M2a) and the offline Colaba pack land before you fly, and
-the summary/charts polish (M4) slips behind them.
+**The open trip-dates question is now answered, by two IRCTC tickets — see [`TRIP.md`](TRIP.md).**
+Mysuru → **Dadar, arriving 05:45 Mon 10 Aug 2026**; **CSMT → Bengaluru, departing 07:55 Mon 17 Aug
+2026**. Seven usable days, in peak monsoon, **boarding in 10 days**. The phase plan in §8 below is
+superseded by the re-cut in §9. §8 is kept because it is what the project returns to on 18 August.
 
 Two briefs were supplied. They agree on the product and disagree on the stack. This document
 resolves the disagreements, states every assumption I am running on, names the three things in
@@ -344,7 +345,11 @@ changes and nothing becomes unintelligible, because no animation carries informa
 
 ---
 
-## 8. Phase plan and what "done" means
+## 8. Phase plan and what "done" means — SUPERSEDED by §9 for the pre-trip window
+
+*This is the 12-week plan. It was written before the trip dates were known and it assumes time the
+project does not have. It stands as the post-trip roadmap, resumed 18 August. For the next 10 days,
+§9 governs.*
 
 Merged from A §13 and B §13. Three lean decision records, then running code every phase.
 
@@ -365,3 +370,51 @@ Merged from A §13 and B §13. Three lean decision records, then running code ev
 Splits moved from M0 to M4 (contradiction #1). Export moved early to M1b, per Brief A's insistence
 that portability isn't a nice-to-have — it's also the only real recovery story once the DB is
 encrypted with a Keystore-bound key that dies with the device.
+
+---
+
+## 9. The re-cut: 8 working days to a phone that works in Mumbai
+
+Boarding is 09 Aug. Usable window is **31 Jul – 7 Aug**, leaving the 8th as slack and the 9th on a
+train. The deadline is not v1 — it is *"the app is on the phone, with the data in it, before you get
+on the Sharavati Express"*. Everything is judged against that.
+
+Two constraints from `TRIP.md` §"What this does to the plan": this container **cannot compile
+Android** (no SDK; `dl.google.com` denied at the proxy), so **GitHub Actions is the compiler** and
+the APK is a CI artifact; and pre-trip distribution is a **release-signed sideload**, not Play.
+
+| Window | Phase | Deliverable | Done means |
+|---|---|---|---|
+| 31 Jul – 1 Aug | **TB1 · Dataset** | `data/places.mumbai.json`, monsoon-weighted and August-correct, with a per-cluster verification report and confidence distribution. Plus a plain-Markdown 7-day itinerary | **Useful even if no app ever ships.** Out-of-season entries flagged, not silently included. Nothing unsourced written |
+| 2 Aug – 4 Aug | **TB2 · Money** | Gradle project, `:domain` (JVM, tested here), Room + SQLCipher, trip seeded with the two real ticket fares, expense entry ≤5 taps, day timeline, category tree with roll-ups, Fare Meter, JSON/CSV export | A **CI-built release APK** installs and logs a real expense offline. Domain tests green locally. Cold-start number reported from whatever measurement is available, or explicitly reported as not-yet-measured |
+| 5 Aug – 6 Aug | **TB3 · Places + map** | Checklist, filters (monsoon-safe · open now · near me · unvisited), detail screen with rules above the photo, bundled PMTiles for the clusters actually in the itinerary, nav-app handoff, the "log what you spent here" seam | Airplane mode: browse every cluster, check a place off, log a linked expense, see the offline map |
+| 7 Aug | **TB4 · Harden + rehearse** | App lock, `allowBackup=false`, `FLAG_SECURE`, export→wipe→import round trip, airplane-mode pass, 200% font pass, install on the real device | You log the ₹743 outbound fare on your own phone, in airplane mode, as a rehearsal |
+| 8 Aug | slack | Nothing planned. Bugs found on the 7th get fixed here | — |
+| 10–16 Aug | **the trip** | Real usage. Notes on what broke | Data survives 7 days. Export taken on the 16th |
+| 18 Aug → | **resume §8** | D1/D2 records, splits, charts, summary, locales, Macrobenchmark, Play release | Informed by 7 days of real use instead of a guess |
+
+### Cut from the pre-trip window, explicitly
+
+Play Store release · splits and settle-up (you are travelling alone — ADR-005 validated by the
+ticket, one passenger) · charts and the trip-summary screen · the three Lottie moments (the
+check-off animation is a `Transition`, not a Lottie file, until there's time) · hi/mr locales ·
+Macrobenchmark and Baseline Profiles · the Paparazzi/Roborazzi screenshot suite · receipts and
+camera · **background location and geofence auto-suggestions**.
+
+That last cut is deliberate and not just about time: seven days of monsoon travel with patchy
+charging is the worst possible context in which to run an unproven background-location service, and
+the geofence-driven category suggestion is a convenience whose failure mode is a wrong expense.
+Manual entry at ≤5 taps is already fast enough to meet the acceptance criterion. It returns
+post-trip, with the battery measurement the brief asked for.
+
+### What is genuinely at risk
+
+- **8 part-time days for TB2+TB3 is aggressive.** If something has to give, TB3's map goes before
+  the checklist does: a checklist with real insider rules is useful on paper, whereas an offline map
+  without the dataset is just a map. The dataset (TB1) is therefore first and is not negotiable.
+- **CI as the only compiler** means slow iteration — minutes per build, and I cannot poke at a
+  running app. Expect the UI to be less polished on 7 Aug than §7 describes. The design system is
+  built to tokens so the polish can land post-trip without a rewrite.
+- **The keystore.** A release-signed sideload needs a keystore that must not be committed and must
+  not be lost, or you can never upgrade the app in place without uninstalling and wiping the
+  database. This gets handled explicitly in TB2, not left to the end.
