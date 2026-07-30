@@ -1,0 +1,220 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/rixscx/Mumbai/data/schema/place.schema.json",
+  "title": "Curated place entry",
+  "description": "One entry in data/places.mumbai.json. The schema exists to make fabrication a validation failure rather than a matter of good intentions: coordinates cannot carry a value without machine provenance, and any claim-bearing field must be reachable from the sources array.",
+  "type": "object",
+  "required": [
+    "id", "name", "cluster", "type", "geo", "what_it_is", "why_locals_rate_it",
+    "insider_rules", "hours", "season", "cost", "duration_minutes", "how_to_get_there",
+    "monsoon_safe", "diet", "safety_notes", "accessibility", "photography_allowed",
+    "reservation_needed", "toilet_nearby", "crowd_level_by_time", "underrated_basis",
+    "confidence", "sources", "last_reviewed"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Stable slug. Never reused, never renamed once shipped — place_visits rows reference it."
+    },
+    "name": { "type": "string", "minLength": 2 },
+    "name_local": {
+      "type": ["string", "null"],
+      "description": "Marathi/Hindi/Gujarati name in its own script, where the place is actually known by one. Null when it genuinely has no local-script name in common use — not a machine transliteration of the English."
+    },
+    "cluster": {
+      "type": "string",
+      "enum": [
+        "fort-kala-ghoda", "colaba", "churchgate-marine-lines", "girgaon-charni-road",
+        "byculla-bhendi-bazaar", "dadar", "matunga", "mahim-bandra-west",
+        "bandra-east-bkc", "khar-santacruz", "andheri-versova-jvlr", "juhu",
+        "goregaon-aarey", "powai-vikhroli", "ghatkopar-chembur", "sion-wadala",
+        "worli-prabhadevi-lower-parel", "sewri-mazgaon", "navi-mumbai", "thane",
+        "day-trips"
+      ]
+    },
+    "type": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "enum": ["eat", "walk", "viewpoint", "market", "heritage", "religious",
+                 "nature", "art", "nightlife", "experience", "shop", "quirk"]
+      }
+    },
+    "geo": {
+      "type": "object",
+      "description": "OSM-derived once resolved, and therefore published under ODbL separately from the editorial fields. lat/lng MUST stay null until tools/resolve_geo.py fills them from a real OSM lookup — the validator rejects a coordinate without provenance. This is the anti-fabrication mechanism: a plausible-looking coordinate 400 m off the right lane is a fabricated address in every way that matters.",
+      "required": ["status", "lat", "lng", "osm_query", "source", "resolved_at", "precision"],
+      "additionalProperties": false,
+      "properties": {
+        "status": { "enum": ["unresolved", "resolved", "failed"] },
+        "lat": { "type": ["number", "null"], "minimum": 18.85, "maximum": 19.35 },
+        "lng": { "type": ["number", "null"], "minimum": 72.75, "maximum": 73.15 },
+        "osm_query": {
+          "type": "string",
+          "minLength": 6,
+          "description": "The search string that resolves this place. Written to be unambiguous enough that a human can check the pin landed on the building, not the neighbourhood centroid."
+        },
+        "source": {
+          "type": ["string", "null"],
+          "description": "e.g. 'osm:node/1234567890' or 'osm:way/98765'. Required whenever lat/lng are non-null."
+        },
+        "resolved_at": { "type": ["string", "null"], "format": "date" },
+        "precision": { "enum": ["building", "street", "area", null] }
+      }
+    },
+    "what_it_is": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 240,
+      "description": "Concrete and specific. Adjectives are not substance: 'iconic', 'vibrant', 'hidden gem' and 'must-visit' are rejected by the validator."
+    },
+    "why_locals_rate_it": { "type": "string", "minLength": 20 },
+    "insider_rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 10 },
+      "description": "The ordering ritual, the cash-only fact, the counter to go to, the permission to ask. This is the product; it renders above the photo."
+    },
+    "hours": {
+      "type": "object",
+      "required": ["known"],
+      "additionalProperties": false,
+      "properties": {
+        "known": { "type": "boolean" },
+        "always_open": {
+          "type": "boolean",
+          "description": "True for public streets, maidans and seafronts — places with no gate and therefore no opening hour. Distinct from 'hours known to be 00:00-24:00', and it needs no citation: the useful information for these is a time of day, carried in best_time and crowd_level_by_time."
+        },
+        "closed_days": {
+          "type": "array",
+          "items": { "enum": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"] }
+        },
+        "closed_days_verified": { "type": "boolean" },
+        "opens_at": {
+          "type": ["string", "null"],
+          "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$",
+          "description": "Use when the opening time is verified but the closing time is not. Half a fact is still a fact; inventing the other half to fill a window object is not. The app renders 'opens 05:00 · closing time unverified'."
+        },
+        "windows": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["open", "close"],
+            "additionalProperties": false,
+            "properties": {
+              "open": { "type": "string", "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$" },
+              "close": { "type": "string", "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$" },
+              "note": { "type": "string" }
+            }
+          }
+        },
+        "note": { "type": "string" }
+      }
+    },
+    "season": {
+      "type": "object",
+      "required": ["months", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "months": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 12,
+          "items": { "type": "integer", "minimum": 1, "maximum": 12 },
+          "description": "Months in which this is worth doing at all. An entry outside its season is hidden or visibly de-ranked, never silently shown — the Sewri flamingos are a Nov-Mar entry and showing them in August sends you to an empty mudflat."
+        },
+        "note": { "type": "string", "minLength": 5 }
+      }
+    },
+    "cost": {
+      "type": "object",
+      "required": ["avg_paise", "band", "cash_only"],
+      "additionalProperties": false,
+      "properties": {
+        "avg_paise": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Integer paise, never a float. Null when not verified — an unverified price ships empty, it does not ship as a guess."
+        },
+        "band": { "enum": ["free", "under-100", "100-300", "300-800", "800-2000", "over-2000", "unknown"] },
+        "cash_only": { "type": ["boolean", "null"] },
+        "note": { "type": "string" }
+      }
+    },
+    "duration_minutes": { "type": ["integer", "null"], "minimum": 5 },
+    "how_to_get_there": {
+      "type": "object",
+      "required": ["nearest_station", "line", "walk_minutes"],
+      "additionalProperties": false,
+      "properties": {
+        "nearest_station": { "type": ["string", "null"] },
+        "line": {
+          "type": ["string", "null"],
+          "enum": ["western", "central", "harbour", "trans-harbour", "metro-1", "metro-2a",
+                   "metro-3", "metro-7", "monorail", "none", null]
+        },
+        "walk_minutes": { "type": ["integer", "null"], "minimum": 0 },
+        "best_bus": { "type": ["string", "null"] },
+        "note": { "type": "string" }
+      }
+    },
+    "monsoon_safe": {
+      "enum": ["yes", "conditional", "no"],
+      "description": "yes = indoor or covered, works in a downpour. conditional = fine in light rain, miserable or closed in heavy. no = do not plan this in August."
+    },
+    "monsoon_note": { "type": "string" },
+    "diet": {
+      "type": "array",
+      "items": { "enum": ["veg", "jain-available", "halal", "non-veg", "vegan-possible", "not-applicable"] }
+    },
+    "safety_notes": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Includes solo, after-dark and women's-safety observations where relevant. Never reassuring by default — 'unknown, assess on arrival' is an acceptable and often more honest value."
+    },
+    "accessibility": { "type": "string", "minLength": 5 },
+    "toilet_nearby": { "type": ["boolean", "null"] },
+    "photography_allowed": { "enum": ["yes", "no", "ask-first", "unknown"] },
+    "reservation_needed": { "enum": ["yes", "no", "recommended", "unknown"] },
+    "crowd_level_by_time": {
+      "type": "object",
+      "additionalProperties": { "enum": ["empty", "light", "busy", "packed", "unknown"] },
+      "description": "Keys are hour ranges like '05:00-07:00'."
+    },
+    "pairs_with": {
+      "type": "array",
+      "maxItems": 3,
+      "items": { "type": "string" },
+      "description": "Nearby entry ids. Validator rejects ids that do not exist — this is what makes 'build my day' possible."
+    },
+    "underrated_basis": {
+      "type": "array",
+      "minItems": 2,
+      "items": { "enum": ["absent-from-top-10-lists", "local-patronage", "needs-local-knowledge", "hyper-specific"] },
+      "description": "The brief's filter: an entry qualifies only if at least two of these hold. Enforced by minItems, so a tourist-trap default cannot pass validation without someone lying in the data."
+    },
+    "confidence": { "enum": ["high", "medium", "low"] },
+    "confidence_note": {
+      "type": "string",
+      "description": "Required for medium and low. Says exactly which field is shaky and why, so the app can render 'hours unverified' rather than a false certainty."
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["url", "retrieved", "supports"],
+        "additionalProperties": false,
+        "properties": {
+          "url": { "type": "string" },
+          "retrieved": { "type": "string", "format": "date" },
+          "supports": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "last_reviewed": { "type": "string", "format": "date" }
+  }
+}

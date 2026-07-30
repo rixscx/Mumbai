@@ -1,0 +1,974 @@
+{
+  "version": 1,
+  "city": "Mumbai",
+  "generated": "2026-07-30",
+  "licence": {
+    "editorial": "Original prose written for this project. No text adapted from CC BY-SA sources — Wikivoyage and Wikipedia are cited as sources where used, never paraphrased closely enough to trigger share-alike.",
+    "geo": "Coordinates, once resolved by tools/resolve_geo.py, are derived from OpenStreetMap and are therefore a Derivative Database under ODbL 1.0. The geo block of every entry is published under ODbL; the editorial fields are not.",
+    "attribution_required": "Map data © OpenStreetMap contributors, ODbL 1.0"
+  },
+  "coverage_note": "This file is incomplete and is being built cluster by cluster. See data/VERIFICATION.md for what is covered, what the confidence distribution looks like, and what is deliberately absent. Entries are not added to reach a count.",
+  "places": [
+    {
+      "id": "ram-ashraya-matunga",
+      "name": "Ram Ashraya",
+      "name_local": null,
+      "cluster": "matunga",
+      "type": [
+        "eat"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Ram Ashraya, Bhandarkar Road, King's Circle, Matunga East, Mumbai 400019",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "South Indian breakfast counter on Bhandarkar Road, cooking from 5am. Idli, upma, filter coffee; the menu opens in stages through the morning rather than all at once. Operating since 1939.",
+      "why_locals_rate_it": "It is where Matunga eats before work, and one of very few kitchens in the city already serving at 5am, so the room at dawn is residents and night-shift workers rather than visitors.",
+      "insider_rules": [
+        "At 05:00 only idli, upma, tea and coffee are ready. Daily specials begin around 06:00 and the full menu at roughly 06:30 — turning up at 05:00 expecting a dosa is a wasted trip.",
+        "Ask what the day's special is instead of reading the whole board; the rotation is the reason regulars come on particular mornings.",
+        "The 5am room is quiet on weekdays and not quiet on Sundays."
+      ],
+      "hours": {
+        "known": true,
+        "opens_at": "05:00",
+        "closed_days": [],
+        "closed_days_verified": false,
+        "note": "Opening time is well attested across several sources. Closing time and any weekly closure are NOT verified — do not assume it is open in the evening, and do not assume it never shuts."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Indoor, year-round. One of the few things on this list that a downpour cannot spoil."
+      },
+      "cost": {
+        "avg_paise": null,
+        "band": "unknown",
+        "cash_only": null,
+        "note": "No verified price. Reported as inexpensive, but no source I checked stated figures, so this ships empty rather than as a guess. Budget a small breakfast and carry cash."
+      },
+      "duration_minutes": 30,
+      "how_to_get_there": {
+        "nearest_station": "Matunga (Central) / King's Circle (Harbour)",
+        "line": "central",
+        "walk_minutes": 6,
+        "best_bus": null,
+        "note": "Matunga on the Central line and King's Circle on the Harbour line both land within a short walk. From Dadar it is one stop south on Central, or about 25 minutes on foot."
+      },
+      "monsoon_safe": "yes",
+      "monsoon_note": "Indoor and early — you are eating before the day's heaviest rain typically builds.",
+      "diet": [
+        "veg"
+      ],
+      "safety_notes": "Bhandarkar Road at 05:00 is a residential street with market activity already underway; well-lit and populated at that hour. No specific concern reported for a solo visitor. Assess for yourself on arrival.",
+      "accessibility": "Unverified. Older Matunga buildings commonly have a step or two at the entrance and no accessible toilet — check before relying on it.",
+      "toilet_nearby": null,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "05:00-06:00": "light",
+        "06:00-09:00": "busy",
+        "09:00-11:00": "busy"
+      },
+      "pairs_with": [
+        "cafe-madras-matunga",
+        "koolar-and-co-matunga",
+        "five-gardens-matunga"
+      ],
+      "underrated_basis": [
+        "local-patronage",
+        "needs-local-knowledge",
+        "hyper-specific"
+      ],
+      "confidence": "medium",
+      "confidence_note": "Existence, location, the 5am opening and the staged menu are corroborated across independent sources. Closing time, weekly closure, exact prices and payment methods are unverified.",
+      "sources": [
+        {
+          "url": "https://theunstumbled.com/ram-ashraya-matunga-guide-what-to-eat-when-to-and-more/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.opens_at",
+            "insider_rules",
+            "crowd_level_by_time"
+          ],
+          "note": "Gives the staged menu timing (idli/upma/tea from 5am, specials from 6, full menu 6:30) and the 5-9am window as best."
+        },
+        {
+          "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d8009165-Reviews-Ram_Ashraya_Restaurant-Mumbai_Maharashtra.html",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "geo.osm_query",
+            "hours.opens_at"
+          ],
+          "note": "Address on Bhandarkar Road, King's Circle, Matunga East 400019; multiple reviews describe 5am service."
+        },
+        {
+          "url": "https://thetastytales.com/ram-ashraya-mumbai/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is"
+          ],
+          "note": "Establishment dated to 1939."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "cafe-madras-matunga",
+      "name": "Café Madras",
+      "name_local": null,
+      "cluster": "matunga",
+      "type": [
+        "eat"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Cafe Madras, Kings Circle, Matunga East, Mumbai 400019",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "Long-running South Indian restaurant at King's Circle, split into a morning-to-afternoon service and a separate evening one, with a gap in the middle when the kitchen closes.",
+      "why_locals_rate_it": "Matunga has several South Indian institutions and residents argue about their relative merits by dish rather than by restaurant; this is the one most often named for its filter coffee and its rotating daily specials.",
+      "insider_rules": [
+        "Closed on Mondays. This is the single most important fact on this entry — a Monday arrival in Mumbai that plans a Café Madras breakfast is planning a locked door.",
+        "The kitchen shuts between about 14:30 and 16:00; arriving at 15:00 gets you nothing.",
+        "Expect to queue at weekend breakfast. Names are taken at the door rather than tables being reserved ahead."
+      ],
+      "hours": {
+        "known": true,
+        "closed_days": [
+          "mon"
+        ],
+        "closed_days_verified": true,
+        "windows": [
+          {
+            "open": "07:00",
+            "close": "14:30",
+            "note": "Tuesday to Sunday"
+          },
+          {
+            "open": "16:00",
+            "close": "22:30",
+            "note": "Tuesday to Sunday"
+          }
+        ]
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Indoor, year-round."
+      },
+      "cost": {
+        "avg_paise": 20000,
+        "band": "100-300",
+        "cash_only": null,
+        "note": "Roughly ₹200 per person for a filling meal, inferred from listed price levels rather than a published menu."
+      },
+      "duration_minutes": 45,
+      "how_to_get_there": {
+        "nearest_station": "Matunga (Central) / King's Circle (Harbour)",
+        "line": "central",
+        "walk_minutes": 5,
+        "best_bus": null,
+        "note": null
+      },
+      "monsoon_safe": "yes",
+      "monsoon_note": "Indoor. A reasonable plan for a washed-out morning, on any day except Monday.",
+      "diet": [
+        "veg"
+      ],
+      "safety_notes": "Busy commercial junction, populated through the day and evening. No specific concern reported for a solo visitor.",
+      "accessibility": "Unverified.",
+      "toilet_nearby": null,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "07:00-09:00": "busy",
+        "09:00-11:00": "packed",
+        "16:00-19:00": "light",
+        "19:00-22:00": "busy"
+      },
+      "pairs_with": [
+        "ram-ashraya-matunga",
+        "koolar-and-co-matunga",
+        "five-gardens-matunga"
+      ],
+      "underrated_basis": [
+        "local-patronage",
+        "needs-local-knowledge"
+      ],
+      "confidence": "high",
+      "confidence_note": "Hours and the Monday closure are stated consistently by more than one listing source. Prices are an estimate.",
+      "sources": [
+        {
+          "url": "https://www.eazydiner.com/mumbai/cafe-madras-matunga-east-222996/about",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "hours.closed_days"
+          ],
+          "note": "07:00-14:30 and 16:00-22:30, Tuesday to Sunday; closed Mondays."
+        },
+        {
+          "url": "https://www.zomato.com/mumbai/cafe-madras-matunga-east",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "geo.osm_query",
+            "cost.avg_paise"
+          ]
+        },
+        {
+          "url": "https://www.dnaindia.com/mumbai/lifestyle-madras-in-mumbai-which-is-the-best-south-indian-restaurant-in-matunga-2105377",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "why_locals_rate_it"
+          ],
+          "note": "Frames the Matunga South Indian restaurants as a local argument, which is the framing used here."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "koolar-and-co-matunga",
+      "name": "Koolar & Co.",
+      "name_local": null,
+      "cluster": "matunga",
+      "type": [
+        "eat",
+        "heritage"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Koolar and Co, 541 Dr Babasaheb Ambedkar Road, Matunga East, Mumbai 400019",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "Irani café facing King's Circle: high ceilings, chequered tablecloths, wooden chairs, chai and bun maska, and an improbably long list of Maggi variations that regulars order unironically.",
+      "why_locals_rate_it": "Mumbai's Irani cafés have been closing for decades; this is a working one rather than a restored one, and it fills with students and families instead of people photographing it.",
+      "insider_rules": [
+        "Chai and bun maska is the order. Everything else is optional.",
+        "The Maggi menu is not a joke and not a tourist gimmick — it is what the student crowd actually comes for.",
+        "Opens at 09:30, so it does not solve an early-morning arrival. Pair it with Ram Ashraya at dawn and come here later."
+      ],
+      "hours": {
+        "known": true,
+        "closed_days": [],
+        "closed_days_verified": true,
+        "windows": [
+          {
+            "open": "09:30",
+            "close": "23:30",
+            "note": "All seven days"
+          }
+        ]
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Indoor, year-round, and open late enough to be a rain shelter."
+      },
+      "cost": {
+        "avg_paise": null,
+        "band": "unknown",
+        "cash_only": null,
+        "note": "No verified price. Irani-cafe chai and bun maska are cheap, but no source I checked stated figures, so this ships empty rather than as a guess."
+      },
+      "duration_minutes": 40,
+      "how_to_get_there": {
+        "nearest_station": "King's Circle (Harbour) / Matunga (Central)",
+        "line": "harbour",
+        "walk_minutes": 4,
+        "best_bus": null,
+        "note": "Directly opposite King's Circle, near Amar petrol pump."
+      },
+      "monsoon_safe": "yes",
+      "monsoon_note": "Open until 23:30 and indoors — the obvious place to wait out an evening downpour in this cluster.",
+      "diet": [
+        "veg",
+        "non-veg"
+      ],
+      "safety_notes": "Main-road location, busy until late. No specific concern reported for a solo visitor.",
+      "accessibility": "Unverified. Old Irani café buildings typically have a threshold step.",
+      "toilet_nearby": null,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "09:30-12:00": "light",
+        "12:00-15:00": "busy",
+        "17:00-21:00": "busy"
+      },
+      "pairs_with": [
+        "cafe-madras-matunga",
+        "ram-ashraya-matunga"
+      ],
+      "underrated_basis": [
+        "local-patronage",
+        "needs-local-knowledge",
+        "hyper-specific"
+      ],
+      "confidence": "medium",
+      "confidence_note": "Address and the 09:30-23:30 seven-day window come from listing aggregators, which are less reliable than a first-party source. Prices are estimated.",
+      "sources": [
+        {
+          "url": "https://yappe.in/maharashtra/mumbai/koolar-co/397853",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "geo.osm_query"
+          ],
+          "note": "Address 541 Dr Baba Saheb Ambedkar Rd; open seven days 09:30-23:30."
+        },
+        {
+          "url": "https://lbb.in/mumbai/visit-koolar-cafe-matunga-east-good-old-irani-chai-charcha-chicken-maggi/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "insider_rules"
+          ],
+          "note": "The Maggi variations and the chai/bun maska order."
+        },
+        {
+          "url": "https://theculinarycolloquy.wordpress.com/2017/07/17/reviews-koolar-and-co-matunga/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is"
+          ],
+          "note": "Interior description: high ceilings, chequered tablecloths, wooden chairs."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "manis-lunch-home-matunga",
+      "name": "Mani's Lunch Home",
+      "name_local": null,
+      "cluster": "matunga",
+      "type": [
+        "eat"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Mani's Lunch Home, Mhaskar Building, Lakshmi Narayan Road, Matunga East, Mumbai 400019",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "Plain South Indian dining room on Lakshmi Narayan Road, of the pared-down kind where the room is functional and the cooking is the entire proposition.",
+      "why_locals_rate_it": "Named alongside Café Madras and Ram Ashraya whenever Matunga residents argue about the cluster's best South Indian kitchen, which is the only endorsement that matters here.",
+      "insider_rules": [
+        "Hours are unverified — this is the entry on the list most likely to send you to a closed shutter. Check on the day, or treat it as a fallback rather than a plan.",
+        "Set expectations for the room, not against it: this is a canteen, not a restaurant with an interior."
+      ],
+      "hours": {
+        "known": false,
+        "note": "No source found for opening hours or a weekly closure. The app must show 'hours unverified' and must not include this entry in an 'open now' filter result."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Indoor, year-round."
+      },
+      "cost": {
+        "avg_paise": null,
+        "band": "unknown",
+        "cash_only": null,
+        "note": "No verified price. Left empty rather than guessed."
+      },
+      "duration_minutes": 40,
+      "how_to_get_there": {
+        "nearest_station": "Matunga (Central)",
+        "line": "central",
+        "walk_minutes": 7,
+        "best_bus": null,
+        "note": "Mhaskar Building, Plot 153/C, Lakshmi Narayan Road."
+      },
+      "monsoon_safe": "yes",
+      "monsoon_note": "Indoor.",
+      "diet": [
+        "veg"
+      ],
+      "safety_notes": "Residential Matunga street. No specific concern reported; hours unknown, so avoid arriving late at night on spec.",
+      "accessibility": "Unverified.",
+      "toilet_nearby": null,
+      "photography_allowed": "unknown",
+      "reservation_needed": "unknown",
+      "crowd_level_by_time": {},
+      "pairs_with": [
+        "cafe-madras-matunga",
+        "ram-ashraya-matunga"
+      ],
+      "underrated_basis": [
+        "absent-from-top-10-lists",
+        "local-patronage"
+      ],
+      "confidence": "low",
+      "confidence_note": "Only the address and the fact of its existence are sourced. Hours, prices and weekly closure are all unknown. Included because it is genuinely well regarded locally, but flagged low so the app de-ranks it and never puts it in a route without a warning.",
+      "sources": [
+        {
+          "url": "https://wanderboat.ai/restaurants/india/mumbai/manis-lunch-home/_2_Muy8uSGmVIp7Urr7kOg",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "geo.osm_query",
+            "what_it_is"
+          ],
+          "note": "Address at Mhaskar Building, Plot 153/C, Lakshmi Narayan Rd; describes a pared-down room."
+        },
+        {
+          "url": "https://www.dnaindia.com/mumbai/lifestyle-madras-in-mumbai-which-is-the-best-south-indian-restaurant-in-matunga-2105377",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "why_locals_rate_it"
+          ]
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "dadar-parsi-colony-walk",
+      "name": "Dadar Parsi Colony",
+      "name_local": "दादर पारसी कॉलनी",
+      "cluster": "dadar",
+      "type": [
+        "walk",
+        "heritage"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Dadar Parsi Colony, Mumbai",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "A planned residential quarter of low-rise blocks and bungalows on tree-lined streets between Five Gardens and Wadala — the largest Zoroastrian settlement anywhere, and still residential rather than restored.",
+      "why_locals_rate_it": "It is a walk through somewhere people live, not a heritage precinct with signage. The reward is the street pattern, the tree cover and the building details, which is why residents walk here at dawn and nobody else is around.",
+      "insider_rules": [
+        "Agiaries — Zoroastrian fire temples, including Rustom Faramna Agiary on this walk — are closed to non-Zoroastrians. Look from the gate; do not walk in, and do not photograph inside the compound.",
+        "This is somebody's neighbourhood at 07:00. Photograph buildings, not residents' windows or doorways.",
+        "Go early. By 10:00 the light is flat, the streets are parked solid, and the reason to be here has gone."
+      ],
+      "hours": {
+        "known": true,
+        "always_open": true,
+        "closed_days": [],
+        "closed_days_verified": true,
+        "note": "Public residential streets, always accessible. The useful information here is a time of day, not an opening hour — go between 06:30 and 09:00. The agiary on the route is a different matter: closed to non-Zoroastrians at any hour."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Walkable year-round. In August the tree cover helps in light rain and does nothing in a downpour."
+      },
+      "cost": {
+        "avg_paise": 0,
+        "band": "free",
+        "cash_only": null,
+        "note": "Free. A guided heritage walk, if one is running, is not."
+      },
+      "duration_minutes": 60,
+      "how_to_get_there": {
+        "nearest_station": "Dadar (Central and Western) / Matunga (Central)",
+        "line": "central",
+        "walk_minutes": 12,
+        "best_bus": null,
+        "note": "Sits between Five Gardens and the Wadala BEST bus depot. Walkable from Dadar station, which is also where the inbound train from Mysuru arrives."
+      },
+      "monsoon_safe": "conditional",
+      "monsoon_note": "Tree cover takes the edge off light rain. In heavy rain this is an hour of being wet with nowhere indoors to retreat to — pair it with a café that is actually open.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "Quiet, low-traffic residential streets, well populated with walkers in the early morning. Reported as calm; as with any residential area, being obviously lost with a camera at night attracts attention. Daytime is unremarkable for a solo visitor.",
+      "accessibility": "Flat, paved, walkable footpaths in most of the colony — better than most Mumbai walking routes. Kerb quality unverified.",
+      "toilet_nearby": null,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "06:00-09:00": "light",
+        "09:00-17:00": "light",
+        "17:00-20:00": "busy"
+      },
+      "pairs_with": [
+        "five-gardens-matunga",
+        "ram-ashraya-matunga",
+        "dadar-flower-market"
+      ],
+      "underrated_basis": [
+        "absent-from-top-10-lists",
+        "local-patronage",
+        "needs-local-knowledge"
+      ],
+      "confidence": "medium",
+      "confidence_note": "The colony, its Zoroastrian character and Rustom Faramna Agiary (built 1928) are documented. The rule that agiaries are closed to non-Zoroastrians is the standard, widely documented norm for Zoroastrian fire temples in India rather than a signposted rule I verified at this specific building — it is stated as the general norm and is the safe assumption either way.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Dadar_Parsi_Colony",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "geo.osm_query"
+          ],
+          "note": "Cited as a source only; no text adapted, to avoid CC BY-SA share-alike on the editorial fields."
+        },
+        {
+          "url": "https://www.sahapediaexperiences.org/blog/dadar-quaint-parsi-colony",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "how_to_get_there"
+          ],
+          "note": "Places the colony between Five Gardens and the Wadala BEST depot; describes the guided-walk route."
+        },
+        {
+          "url": "https://zoroastrians.net/2015/05/14/five-gardens-in-dadar-parsi-colony/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "insider_rules"
+          ],
+          "note": "Rustom Faramna Agiary, constructed 1928, described as one of the busiest Parsi temples in the country."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "five-gardens-matunga",
+      "name": "Five Gardens",
+      "name_local": null,
+      "cluster": "matunga",
+      "type": [
+        "walk",
+        "nature"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Five Gardens, Dadar Parsi Colony, Matunga East, Mumbai",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "A set of small public gardens on a grid of quiet streets in the Parsi Colony, used as a circuit by morning walkers and joggers rather than as a destination.",
+      "why_locals_rate_it": "It is the green space that the surrounding colony actually uses at 06:30, which makes it the right way to start a Matunga morning and a poor way to spend a Saturday afternoon.",
+      "insider_rules": [
+        "The point is the loop between the gardens, not any single garden. Walk the circuit.",
+        "Early morning or early evening only — midday is hot, empty and pointless.",
+        "It adjoins the Parsi Colony walk; treat them as one outing rather than two."
+      ],
+      "hours": {
+        "known": false,
+        "note": "Individual gardens are municipal and may have posted gate hours that I could not verify. The surrounding streets are always open, so an early-morning circuit works regardless."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Year-round. In August the greenery is at its best and the ground is at its wettest."
+      },
+      "cost": {
+        "avg_paise": 0,
+        "band": "free",
+        "cash_only": null
+      },
+      "duration_minutes": 40,
+      "how_to_get_there": {
+        "nearest_station": "Matunga (Central)",
+        "line": "central",
+        "walk_minutes": 8,
+        "best_bus": null,
+        "note": null
+      },
+      "monsoon_safe": "conditional",
+      "monsoon_note": "Fine in light rain, waterlogged and unpleasant in heavy rain. No shelter on the circuit.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "Popular with residents for morning and evening exercise, so it is populated at exactly the hours worth visiting. Unremarkable for a solo visitor by day.",
+      "accessibility": "Flat and paved around the gardens; specific ramp and kerb detail unverified.",
+      "toilet_nearby": null,
+      "photography_allowed": "yes",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "06:00-08:30": "busy",
+        "11:00-16:00": "empty",
+        "17:30-20:30": "busy"
+      },
+      "pairs_with": [
+        "dadar-parsi-colony-walk",
+        "ram-ashraya-matunga",
+        "koolar-and-co-matunga"
+      ],
+      "underrated_basis": [
+        "absent-from-top-10-lists",
+        "local-patronage"
+      ],
+      "confidence": "medium",
+      "confidence_note": "Existence, location within the Parsi Colony and its use for morning and evening walks are sourced. Gate hours for the individual gardens are not verified.",
+      "sources": [
+        {
+          "url": "https://lbb.in/mumbai/guide-five-gardens/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "why_locals_rate_it",
+            "crowd_level_by_time"
+          ],
+          "note": "Describes it as surrounded by the Dadar Parsi Colony and used for morning walks and evening jogs."
+        },
+        {
+          "url": "https://zoroastrians.net/2015/05/14/five-gardens-in-dadar-parsi-colony/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "geo.osm_query",
+            "what_it_is"
+          ]
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "dadar-flower-market",
+      "name": "Dadar Flower Market",
+      "name_local": "फूल गल्ली",
+      "cluster": "dadar",
+      "type": [
+        "market",
+        "experience"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Dadar Flower Market, Phool Galli, Dadar West, Mumbai",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "The city's wholesale flower trade, run on a lane near Dadar West station from about 4am: marigold and tuberose by the sackful, garlands assembled on the pavement, sold on before the rest of Mumbai is awake.",
+      "why_locals_rate_it": "It is a working wholesale market with a shift pattern, not a display. Retail buyers are tolerated after the trade thins out, which is the whole trick to visiting it well.",
+      "insider_rules": [
+        "The wholesale hours are roughly 04:30-07:30 and the retail-friendly window is about 07:30-10:30. Arrive inside the wholesale window to see the market working; arrive after it if you actually want to buy small quantities without getting in the way.",
+        "It is winding down by 10:00. There is no afternoon flower market.",
+        "Cash. Do not expect to pay for a ₹30 garland by UPI at 05:00 in a wholesale lane.",
+        "Wear shoes you do not mind ruining — the lane is wet with stems and petals even in dry weather, and in August it is worse.",
+        "Open all seven days, which makes it the rare Mumbai plan that a Monday cannot spoil."
+      ],
+      "hours": {
+        "known": true,
+        "opens_at": "04:00",
+        "closed_days": [],
+        "closed_days_verified": true,
+        "windows": [
+          {
+            "open": "04:30",
+            "close": "07:30",
+            "note": "Wholesale peak — the market at full tilt"
+          },
+          {
+            "open": "07:30",
+            "close": "10:30",
+            "note": "Retail-friendly, thinner crowds"
+          }
+        ],
+        "note": "Opens around 04:00 and slows by 10:00. Open all seven days."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Year-round, and busiest around festivals when garland demand spikes. In August the lane is wet and the flowers keep coming."
+      },
+      "cost": {
+        "avg_paise": 0,
+        "band": "free",
+        "cash_only": true,
+        "note": "Free to walk through. Buying is optional and cheap; carry small notes."
+      },
+      "duration_minutes": 45,
+      "how_to_get_there": {
+        "nearest_station": "Dadar (Western and Central)",
+        "line": "western",
+        "walk_minutes": 5,
+        "best_bus": null,
+        "note": "A short walk from Dadar station — which is where the inbound Sharavati Express arrives at 05:45, putting you at the market inside its best hour without planning anything."
+      },
+      "monsoon_safe": "conditional",
+      "monsoon_note": "The trade runs in the rain because it has to, and parts of the lane are covered. You will get wet and the footing will be slippery. Worth it in light rain; grim in a downpour.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "Busy with traders and porters from 04:00, so it is populated rather than deserted at an hour that would otherwise be a concern. Watch for handcarts and porters moving fast in a narrow lane; keep bags closed in the crush. Reported as unremarkable for a solo visitor at market hours.",
+      "accessibility": "Poor. A narrow, wet, crowded lane with handcart traffic and no clear path — not navigable with a wheelchair or a large suitcase.",
+      "toilet_nearby": null,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "04:00-04:30": "busy",
+        "04:30-07:30": "packed",
+        "07:30-09:00": "busy",
+        "09:00-10:30": "light"
+      },
+      "pairs_with": [
+        "ram-ashraya-matunga",
+        "dadar-parsi-colony-walk"
+      ],
+      "underrated_basis": [
+        "local-patronage",
+        "needs-local-knowledge",
+        "hyper-specific"
+      ],
+      "confidence": "medium",
+      "confidence_note": "Opening hour, the wholesale and retail windows, the seven-day operation and the wind-down by 10:00 are consistent across several independent write-ups. The exact lane boundaries and any 2026 relocation of the market are unverified — markets do move.",
+      "sources": [
+        {
+          "url": "https://www.igp.com/blog/dadar-flower-market/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "hours.opens_at"
+          ],
+          "note": "Opens around 04:00; wholesale peak 04:30-07:30; retail-friendly 07:30-10:30."
+        },
+        {
+          "url": "https://lbb.in/mumbai/flower-market-dadar/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "hours.closed_days"
+          ],
+          "note": "Previously known as Phool Gully; open all seven days."
+        },
+        {
+          "url": "https://thegreatmumbai.com/travel-guide/inside-dadar-flower-market-mumbai-5am/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "crowd_level_by_time",
+            "insider_rules"
+          ],
+          "note": "Most visitors between 05:00 and 08:00; activity slowing by 10:00."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "bhau-daji-lad-museum",
+      "name": "Dr Bhau Daji Lad Mumbai City Museum",
+      "name_local": null,
+      "cluster": "byculla-bhendi-bazaar",
+      "type": [
+        "art",
+        "heritage"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Dr Bhau Daji Lad Mumbai City Museum, Byculla East, Mumbai 400027",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "The city's oldest museum, in a restored Victorian building at Byculla: decorative-arts collections and models of nineteenth-century Bombay trades, plus contemporary shows in the same rooms.",
+      "why_locals_rate_it": "It is the one museum in Mumbai that is about Mumbai as a working city rather than about empire or art in general, and it stays quiet on weekdays while the better-known museums fill up.",
+      "insider_rules": [
+        "Closed every Wednesday, and on some public holidays. Wednesday 12 August falls inside this trip — do not plan Byculla around this museum that day.",
+        "Entry is ₹20 for Indian adults and ₹100 for foreign nationals; student and senior tickets are ₹10 with ID. Carry the ID if you want the student rate.",
+        "It closes at 17:30, which is early. An afternoon that starts at 16:00 is not enough time.",
+        "The building itself is part of the visit — look up at the ironwork and the ceiling, not only into the cases."
+      ],
+      "hours": {
+        "known": true,
+        "closed_days": [
+          "wed"
+        ],
+        "closed_days_verified": true,
+        "windows": [
+          {
+            "open": "10:00",
+            "close": "17:30"
+          }
+        ],
+        "note": "Also closed on select public holidays — Independence Day on Saturday 15 August is worth checking directly before going."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Indoor and air-conditioned. One of the strongest monsoon options in the city."
+      },
+      "cost": {
+        "avg_paise": 2000,
+        "band": "under-100",
+        "cash_only": null,
+        "note": "₹20 Indian adult. ₹10 student or senior with ID, ₹100 foreign national. Verified from listing sources rather than the museum's own page."
+      },
+      "duration_minutes": 90,
+      "how_to_get_there": {
+        "nearest_station": "Byculla (Central)",
+        "line": "central",
+        "walk_minutes": 12,
+        "best_bus": null,
+        "note": "Adjacent to the Byculla zoo compound (Veermata Jijabai Bhosale Udyan). From Dadar it is a short hop south on the Central line."
+      },
+      "monsoon_safe": "yes",
+      "monsoon_note": "Indoor, and the single best answer on this list to a washed-out August afternoon — on any day except Wednesday.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "Institutional building with staffed entry in a busy part of Byculla. Unremarkable for a solo visitor during opening hours. Closing at 17:30 means you leave in daylight.",
+      "accessibility": "Unverified for this building. A restored Victorian structure — assume steps and ask at the entrance rather than relying on it.",
+      "toilet_nearby": true,
+      "photography_allowed": "unknown",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "10:00-13:00": "light",
+        "13:00-16:00": "light",
+        "16:00-17:30": "light"
+      },
+      "pairs_with": [],
+      "underrated_basis": [
+        "absent-from-top-10-lists",
+        "local-patronage",
+        "needs-local-knowledge"
+      ],
+      "confidence": "high",
+      "confidence_note": "Wednesday closure, 10:00-17:30 hours and the ticket prices are stated consistently across multiple listing sources. Not yet cross-checked against the museum's own site, so prices could have moved.",
+      "sources": [
+        {
+          "url": "https://www.bdlmuseum.org/visit/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "hours.closed_days"
+          ],
+          "note": "Museum's own visit page. Appeared in search results as the first-party source; contents not read directly, so treat the specifics as corroborated by the listings below."
+        },
+        {
+          "url": "https://www.trawell.in/maharashtra/mumbai/bhau-daji-lad-museum-victoria-albert-museum",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.closed_days",
+            "hours.windows",
+            "cost.avg_paise"
+          ],
+          "note": "Closed all Wednesdays and select public holidays; 10:00-17:30."
+        },
+        {
+          "url": "https://www.mumbaiker.com/travel-tourism/dr-bhau-daji-lad-museum-tickets-timings-and-entry-fee-complete-visitor-guide-2025/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "cost.avg_paise"
+          ],
+          "note": "₹20 adult, ₹10 student/senior with ID, ₹100 foreign national."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    }
+  ]
+}

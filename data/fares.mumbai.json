@@ -1,0 +1,50 @@
+{
+  "_comment": "Sourced base fares, kept in one place so cost estimates are DERIVED from verified numbers rather than guessed per place. The app computes an auto estimate from these; no place entry hardcodes a fare. When these go stale, one file changes.",
+  "version": 1,
+  "currency": "INR",
+  "last_reviewed": "2026-07-30",
+  "auto_rickshaw": {
+    "minimum_fare_paise": 2600,
+    "minimum_fare_covers_km": 1.5,
+    "per_km_paise": null,
+    "night_surcharge_pct": 25,
+    "night_window": { "from": "00:00", "to": "05:00" },
+    "confidence": "medium",
+    "confidence_note": "Minimum daytime fare of Rs 26 is reported by news coverage of an MMRTA revision effective 1 February. The per-km rate above the minimum was not stated in a source I could verify, so it stays null and the app must present auto costs as a minimum-fare floor plus 'metered beyond 1.5 km' rather than a total.",
+    "sources": [
+      {
+        "url": "https://www.lokmattimes.com/mumbai/fare-hike-for-auto-rickshaws-kaali-peeli-taxis-and-cool-cabs-in-mumbai-starting-february-1-a475/",
+        "retrieved": "2026-07-30",
+        "supports": ["minimum_fare_paise", "night_surcharge_pct"]
+      }
+    ]
+  },
+  "kaali_peeli_taxi": {
+    "minimum_fare_paise": 3100,
+    "per_km_paise": 2066,
+    "night_surcharge_pct": 25,
+    "night_window": { "from": "00:00", "to": "05:00" },
+    "confidence": "medium",
+    "confidence_note": "Rs 31 base and Rs 20.66/km reported for the same MMRTA revision. Year of the 'effective 1 February' revision is ambiguous in the source, so treat as an estimate baseline and re-verify. Note the night surcharge ends at 05:00 — a 05:45 arrival at Dadar is just outside it.",
+    "sources": [
+      {
+        "url": "https://www.lokmattimes.com/mumbai/fare-hike-for-auto-rickshaws-kaali-peeli-taxis-and-cool-cabs-in-mumbai-starting-february-1-a475/",
+        "retrieved": "2026-07-30",
+        "supports": ["minimum_fare_paise", "per_km_paise", "night_surcharge_pct"]
+      }
+    ]
+  },
+  "suburban_train": {
+    "second_class_fare_paise": null,
+    "first_class_fare_paise": null,
+    "confidence": "low",
+    "confidence_note": "Not yet researched. Deliberately null rather than filled with the Rs 10 figure from the brief's own example, which I have not verified for 2026. The brief's quick-add preset for a train ticket must therefore be user-set on first use, not pre-seeded with a number I made up.",
+    "sources": []
+  },
+  "best_bus": {
+    "minimum_fare_paise": null,
+    "confidence": "low",
+    "confidence_note": "Not yet researched.",
+    "sources": []
+  }
+}
