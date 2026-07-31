@@ -175,3 +175,63 @@ running app from here; UI defects will be found by you on-device rather than by 
 architecture rule "domain has zero Android imports" load-bearing rather than stylistic — the more
 logic that lives in `:domain`, the more of this project is actually testable before it reaches a
 phone.
+
+---
+
+## ADR-010 — A web app alongside Compose, with a stated end condition · ACCEPTED 2026-07-31
+
+**Chose:** ship an installable PWA in `web/` *and* build the Kotlin/Compose app in `android/`, with
+the shared logic living once in `:domain`. The web app is retired when the Compose app carries the
+same features.
+
+**Why:** ADR-001 commits to Kotlin + Compose and that has not changed. But ADR-009 established that
+the authoring container cannot compile, run or screenshot Android at all, and the trip boards on
+09 August. Writing only Kotlin would mean nothing reaches the phone until a CI round-trip per change,
+with no way to look at the result — for a deadline nine days out, that is a real risk of arriving
+with nothing usable. The PWA installs to a home screen today, works with no network, and let the
+expense-entry and hours behaviour be exercised against the real dataset before the same rules were
+written in Kotlin. Both front-ends are thin: the money maths, the hours engine, the category roll-ups
+and the budget projection are in `:domain`, tested once, and reimplemented in neither.
+
+**Rejected:** Kotlin only. Defensible, and it is the destination — but it would have meant no
+testable UI before the trip and no way to catch the class of bug that actually surfaced (a dawn
+market reported as "shut on Monday" because a day view sampled it at noon). That bug was found in the
+web app in minutes and is now a regression test in Kotlin. Also rejected: a Trusted Web Activity
+wrapper around the PWA shipped as the APK — it would have produced a real APK quickly, but every §7
+quality gate (Macrobenchmark, Baseline Profiles, Paparazzi) becomes meaningless across a WebView, and
+that is most of the reason ADR-001 chose native.
+
+**Costs later:** two UIs to keep honest, and a standing risk that they drift on behaviour the shared
+module does not own — anything about layout, wording or interaction is duplicated by hand. The end
+condition is therefore not optional: once Compose reaches feature parity, `web/` is deleted rather
+than maintained, and until then any behaviour worth keeping consistent belongs in `:domain` rather
+than in either UI.
+
+---
+
+## ADR-011 — Live opening hours are opt-in, keyed by the user, and never authoritative · ACCEPTED 2026-07-31
+
+**Chose:** opening hours are computed offline from the curated dataset at the trip's timezone. A
+Google Places lookup is an *optional* second opinion the user enables with their own API key, stored
+only on the device; it renders **beside** the curated hours, and when the two disagree the app says
+so and picks neither.
+
+**Why:** the dataset's value is that every claim is sourced, dated and caveated, and
+`tools/validate_places.py` enforces that. Letting a third party silently overwrite those fields would
+throw away the only property that makes the data trustworthy — Google's hours are crowd-edited and
+have no provenance this project can inspect. Meanwhile the offline engine is what actually works in
+a tunnel at Dadar, which is the product's premise. Shipping a project-owned API key was never an
+option: it would be extractable from the APK, billable to us, and a per-request record of where the
+user is looking.
+
+**Rejected:** fetching hours for the whole dataset on launch and caching them as the truth. Simpler
+to build and it would look better in a demo, but it makes the app useless offline, adds a bill, and
+converts a sourced dataset into an unsourced one. Also rejected: no live layer at all — defensible,
+but a restaurant that changed its hours last month is a real failure the traveller can pre-empt if
+they choose to.
+
+**Costs later:** three layers of truth (curated, the user's own corrections, live) is more state than
+one, and the UI has to label which is which on every surface that shows hours. The Google path also
+needs CORS or a proxy, and it is **written but never executed** — all outbound network is denied in
+the authoring container — so its first real run will be on a phone, and Settings says exactly that
+rather than implying it is tested.

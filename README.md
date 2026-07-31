@@ -5,10 +5,10 @@ carries a checklist of the Mumbai that locals actually use.
 
 ## Status
 
-**TB1 — the dataset. In progress: 29 places across 13 of 21 clusters, plus a 7-day itinerary.**
-Phase 0 is signed off. A Gradle scaffold exists with a JVM-only `:domain` module; **no Android code
-has been compiled**, because this container has no Android SDK and cannot reach Google's Maven
-(ADR-009 — CI is the compiler).
+**TB1 — the dataset, and a phone you can install onto.** 29 sourced places across 13 of 21
+clusters, a 7-day itinerary, and two front-ends: an installable web app that works today and the
+Kotlin/Compose app whose **APK is built by CI** (ADR-009 — CI is the compiler, because this container
+has no Android SDK). `:domain` carries the shared logic in Kotlin with **53 passing unit tests**.
 
 The dataset comes first on purpose: it is the one deliverable that is **useful even if no app ever
 ships**, and the trip it serves boards on 09 August.
