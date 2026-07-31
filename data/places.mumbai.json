@@ -3151,6 +3151,414 @@
         }
       ],
       "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "nehru-science-centre-worli",
+      "name": "Nehru Science Centre",
+      "name_local": null,
+      "cluster": "worli-prabhadevi-lower-parel",
+      "type": [
+        "experience",
+        "heritage"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Nehru Science Centre, Dr E Moses Road, Worli, Mumbai 400018",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "India's largest interactive science centre, on Dr E Moses Road in Worli. Hands-on galleries across sound, light, mechanics and energy, a science park in the grounds, and a resident aircraft.",
+      "why_locals_rate_it": "It is where Mumbai's schools take their trips, so it runs on term-time rhythms rather than tourist ones — and it is one of the few large indoor spaces in the city that opens every single day of the year.",
+      "insider_rules": [
+        "It opens every day, public holidays included. In a city where museums shut on Mondays and Wednesdays, that makes this the reliable wet-weather fallback — and both bookend days of this trip are Mondays.",
+        "The ticket counter closes at 17:30 against an 18:00 close, so arriving after 17:00 buys you very little.",
+        "Avoid weekday mornings in term time if you want quiet — school groups arrive in coaches and fill the interactive galleries first.",
+        "This is NOT the Nehru Planetarium. That is a separate institution about a kilometre away on Dr Annie Besant Road, with its own ticket and its own closed day."
+      ],
+      "hours": {
+        "known": true,
+        "windows": [
+          {
+            "open": "09:30",
+            "close": "18:00",
+            "note": "Ticket counter 09:30-17:30."
+          }
+        ],
+        "closed_days": [],
+        "closed_days_verified": true,
+        "note": "Open all seven days including Sundays and public holidays, year-round, per the centre's own opening-hours page as surfaced in search. That makes it one of very few entries here with no weekly closure."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Indoor and year-round. The outdoor science park is the part rain takes away."
+      },
+      "cost": {
+        "avg_paise": 4000,
+        "band": "under-100",
+        "cash_only": false,
+        "note": "Rs 40 per head reported. Separate charges are likely for special shows and the 3D theatre; those were not sourced."
+      },
+      "duration_minutes": 150,
+      "how_to_get_there": {
+        "nearest_station": "Mahalaxmi",
+        "line": "western",
+        "walk_minutes": 20,
+        "best_bus": null,
+        "note": "Mahalaxmi on Western or Elphinstone Road/Prabhadevi, then a rickshaw — Worli sits between the two lines and is not close to either. Lower Parel is a similar hop."
+      },
+      "monsoon_safe": "yes",
+      "monsoon_note": "Large, fully indoor, and open every day. This is close to the ideal August contingency: if a morning washes out, this absorbs the rest of the day.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "A ticketed government institution with staff and security throughout, busy with school groups and families. No specific concern, including for a solo visitor.",
+      "accessibility": "Unverified in detail, though a modern purpose-built government science centre is more likely to have ramps and lifts than the heritage buildings elsewhere in this dataset. Confirm on arrival if it matters.",
+      "toilet_nearby": true,
+      "photography_allowed": "unknown",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "09:30-12:00": "busy",
+        "12:00-15:00": "busy",
+        "15:00-18:00": "light"
+      },
+      "pairs_with": [
+        "nehru-planetarium-worli"
+      ],
+      "underrated_basis": [
+        "absent-from-top-10-lists",
+        "local-patronage"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://nehrusciencecentre.gov.in/plan-a-visit/opening-hours/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "hours.closed_days",
+            "hours.closed_days_verified"
+          ],
+          "note": "The centre's own opening-hours page: 09:30-18:00, counter to 17:30, open every day including public holidays. Surfaced via search — the page itself could NOT be fetched from this container."
+        },
+        {
+          "url": "https://www.thrillophilia.com/attractions/nehru-science-centre",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "hours.windows",
+            "why_locals_rate_it"
+          ],
+          "note": "Galleries and science park; hours and counter timing; India's largest interactive science centre."
+        },
+        {
+          "url": "https://www.mumbaiker.com/latest-news/nehru-science-center-tickets-booking-timings-and-how-to-reach/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "cost.avg_paise",
+            "geo.osm_query",
+            "how_to_get_there.note"
+          ],
+          "note": "Rs 40 entry, Dr E Moses Road Worli address, access guidance."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "nehru-planetarium-worli",
+      "name": "Nehru Planetarium",
+      "name_local": null,
+      "cluster": "worli-prabhadevi-lower-parel",
+      "type": [
+        "experience"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Nehru Planetarium, Nehru Centre, Dr Annie Besant Road, Worli, Mumbai 400018",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "The planetarium at Nehru Centre on Dr Annie Besant Road, running scheduled dome shows through the afternoon in Hindi, Marathi and English rather than continuous access to exhibits.",
+      "why_locals_rate_it": "Shows run in Marathi and Hindi as standard, not as an accommodation, so the afternoon audience is local families — and because it is show-based, arriving at the wrong hour means no visit at all.",
+      "insider_rules": [
+        "It is a timed show, not a walk-in gallery. Reported slots are 12:00 Hindi, 13:30 Marathi, 15:00 English, 16:30 Hindi — turn up outside those and there is nothing to see.",
+        "Closed Mondays, which rules it out on 10 and 17 August, the arrival and departure days of this trip.",
+        "Pick your slot by language before you travel; the English show is the 15:00 one.",
+        "Separate institution from the Nehru Science Centre about a kilometre away, with a separate and much higher ticket. Do not conflate the two."
+      ],
+      "hours": {
+        "known": true,
+        "windows": [
+          {
+            "open": "12:00",
+            "close": "13:00",
+            "note": "Hindi show."
+          },
+          {
+            "open": "13:30",
+            "close": "14:30",
+            "note": "Marathi show."
+          },
+          {
+            "open": "15:00",
+            "close": "16:00",
+            "note": "English show."
+          },
+          {
+            "open": "16:30",
+            "close": "17:30",
+            "note": "Hindi show."
+          }
+        ],
+        "closed_days": [
+          "mon"
+        ],
+        "closed_days_verified": true,
+        "note": "Show start times are reported consistently; the one-hour show lengths are an assumption for scheduling purposes, not a sourced duration. Closed Mondays."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Indoor and year-round."
+      },
+      "cost": {
+        "avg_paise": 15000,
+        "band": "100-300",
+        "cash_only": null,
+        "note": "Rs 150 reported for adults and children over 5. Nearly four times the Nehru Science Centre's entry, so budget the two separately. Aggregator-sourced."
+      },
+      "duration_minutes": 60,
+      "how_to_get_there": {
+        "nearest_station": "Mahalaxmi",
+        "line": "western",
+        "walk_minutes": 25,
+        "best_bus": null,
+        "note": "Worli, on Dr Annie Besant Road at Nehru Centre. No station is close — rickshaw from Mahalaxmi or Prabhadevi. About a kilometre from the Nehru Science Centre, so the two combine into one Worli afternoon."
+      },
+      "monsoon_safe": "yes",
+      "monsoon_note": "Indoors and a fixed hour under a dome — a good use of the worst part of a wet afternoon, provided you make a show time.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "A ticketed venue inside the Nehru Centre complex, staffed and busy with families. No specific concern. Worli's roads are not pleasant to walk after dark; take a rickshaw.",
+      "accessibility": "Unverified. A domed auditorium implies stepped seating; step-free access to the dome floor is not established.",
+      "toilet_nearby": true,
+      "photography_allowed": "no",
+      "reservation_needed": "recommended",
+      "crowd_level_by_time": {
+        "12:00-13:30": "busy",
+        "13:30-15:00": "busy",
+        "15:00-17:30": "light"
+      },
+      "pairs_with": [
+        "nehru-science-centre-worli"
+      ],
+      "underrated_basis": [
+        "local-patronage",
+        "needs-local-knowledge"
+      ],
+      "confidence": "medium",
+      "confidence_note": "The Monday closure, the Rs 150 adult fee and the four show slots with their languages are reported consistently across three listings, but all three are secondary sources rather than the planetarium itself. Show durations are assumed, not sourced, and whether shows are added or dropped seasonally is unknown — confirm the slot before travelling.",
+      "sources": [
+        {
+          "url": "https://mumbai7.com/nehru-planetarium/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "hours.closed_days",
+            "cost.avg_paise"
+          ],
+          "note": "Show times by language, Monday closure, Rs 150 adult ticket."
+        },
+        {
+          "url": "https://mumbaitourism.travel/nehru-planetarium-mumbai",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.closed_days",
+            "what_it_is",
+            "geo.osm_query"
+          ],
+          "note": "Closed Mondays; Nehru Centre, Dr Annie Besant Road address."
+        },
+        {
+          "url": "https://www.triphobo.com/places/mumbai-india/nehru-planetarium",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "cost.avg_paise",
+            "what_it_is"
+          ],
+          "note": "Ticket price and the show-based format."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "st-michaels-church-mahim",
+      "name": "St Michael's Church (Mahim Church)",
+      "name_local": null,
+      "cluster": "mahim-bandra-west",
+      "type": [
+        "religious",
+        "heritage",
+        "experience"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "St Michael's Church, Lady Jamshedji Road, Mahim West, Mumbai 400016",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "A Catholic church in Mahim whose Wednesday novena to St Michael runs from before dawn until late evening in five languages. A parish priest has put weekly attendance at 40,000-50,000 people.",
+      "why_locals_rate_it": "The Wednesday novena crosses religion in a way little else in the city does — Hindus and Muslims queue alongside Catholics — and the sequence of nine Wednesdays is a commitment Mumbai families keep across years.",
+      "insider_rules": [
+        "Wednesday is the day. On any other day it is a quiet parish church; on Wednesday it is one of the largest recurring gatherings in the city.",
+        "Services run roughly 06:00 to 21:30 with a novena almost every hour, in English, Konkani, Tamil, Marathi and Hindi. Pick a slot by language — the 10:30 is Konkani, 13:00 Tamil, 14:00 and 15:00 Marathi, 16:00 Hindi.",
+        "Go to an early slot, 06:00-08:00, if crowds are a problem. Tens of thousands pass through across the day and the middle hours are the worst.",
+        "Flower and candle sellers line the approach and the street is effectively closed to easy movement on Wednesdays. Walk from Mahim station rather than trying to arrive by car."
+      ],
+      "hours": {
+        "known": true,
+        "windows": [
+          {
+            "open": "06:00",
+            "close": "21:30",
+            "note": "Wednesday novena schedule; services roughly hourly. Non-Wednesday hours are ordinary parish hours and were not sourced."
+          }
+        ],
+        "closed_days": [],
+        "closed_days_verified": true,
+        "note": "A parish church, open daily. The 06:00-21:30 window with near-hourly novenas describes WEDNESDAYS specifically, which is the only day worth planning around. Ordinary weekday mass times were not sourced."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Year-round, every Wednesday. Wednesday 12 August falls inside this trip."
+      },
+      "cost": {
+        "avg_paise": 0,
+        "band": "free",
+        "cash_only": null,
+        "note": "No charge to enter or attend. Candles and flowers from the sellers outside are a separate small cash cost."
+      },
+      "duration_minutes": 60,
+      "how_to_get_there": {
+        "nearest_station": "Mahim Junction",
+        "line": "western",
+        "walk_minutes": 10,
+        "best_bus": null,
+        "note": "Mahim Junction on Western, or Mahim on the Harbour line. On Wednesdays the surrounding streets are congested — arrive on foot from the station."
+      },
+      "monsoon_safe": "yes",
+      "monsoon_note": "The church itself is covered. The queue and the approach are not, and on a wet Wednesday tens of thousands of people plus standing water make the street hard going.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "Extremely crowded on Wednesdays — the risk is crush and pickpocketing rather than anything else. Keep bags in front and valuables away. Well policed and heavily overlooked, and comfortable alone including for women, but not a place to be in a hurry.",
+      "accessibility": "Poor on Wednesdays regardless of the building: the volume of people makes a wheelchair or a pram very difficult. A non-Wednesday visit is a different proposition.",
+      "toilet_nearby": null,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "06:00-08:00": "busy",
+        "08:00-12:00": "packed",
+        "12:00-18:00": "packed",
+        "18:00-21:30": "packed"
+      },
+      "pairs_with": [
+        "ranwar-village-bandra"
+      ],
+      "underrated_basis": [
+        "local-patronage",
+        "needs-local-knowledge",
+        "hyper-specific"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "http://stmichaelschurchmahim.blogspot.com/p/novena-timings.html",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "insider_rules"
+          ],
+          "note": "The parish's own novena timings page, listing each Wednesday slot and its language. Surfaced via search; not directly fetched."
+        },
+        {
+          "url": "https://mumbaichurchtimings.blogspot.com/2010/03/novena-timings-st-micheals-church-mahim.html",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "insider_rules"
+          ],
+          "note": "Full Wednesday novena timetable with languages, corroborating the parish listing. Dated 2010, so the schedule may have shifted."
+        },
+        {
+          "url": "https://mumbai7.com/st-michael-church-mahim/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "why_locals_rate_it",
+            "crowd_level_by_time"
+          ],
+          "note": "Attendance of 40,000-50,000 weekly attributed to Father Hugh Fonseca; the cross-community character of the novena."
+        },
+        {
+          "url": "https://memumbai.com/st-michael-church/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "geo.osm_query",
+            "why_locals_rate_it"
+          ],
+          "note": "History of the church and the nine-Wednesday novena tradition; Mahim location."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
     }
   ]
 }

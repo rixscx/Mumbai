@@ -93,15 +93,54 @@ my own examples from the Phase 0 wireframes:
   10–17 Aug 2026 have to be sourced and bundled, or the field ships empty with a "check the tide"
   instruction. It will not be filled with plausible-looking numbers.
 
-### Calendar items to verify before they wreck a day (VERIFY, all of them)
+### The August 2026 calendar, now sourced
 
-- **Sat 15 Aug is Independence Day** — expect security restrictions and possible closures around
-  CSMT, Gateway, Marine Drive and government buildings. Needs checking, not guessing.
-- **Both bookend days are Mondays**, and many museums close on Mondays. Which ones, specifically,
-  is a research task — arriving at a locked gate on day one is exactly the failure the insider-rules
-  field exists to prevent.
-- Any Parsi New Year / Janmashtami dates falling in the window — relevant to Irani cafés and to
-  crowding. I do not know the 2026 dates and will not state them until sourced.
+These were open questions. Three of the four are now answered, and one of the answers lands squarely
+inside the trip.
+
+- **Ganesh Chaturthi 2026 is 14 September** (one source says the 15th), with Anant Chaturdashi and
+  the visarjan processions on 23 September. **This falls entirely outside the trip window.** That is
+  the single biggest planning relief available: no Lalbaug crush, no immersion-day transport
+  shutdown, no city-wide crowding. It also means the Girgaon idol workshops will be working but not
+  yet at their peak. Sourced: [drikpanchang](https://www.drikpanchang.com/festivals/ganesh-chaturthi/ganesh-chaturthi-date-time.html),
+  [calendarlabs](https://www.calendarlabs.com/holidays/india/ganesh-chaturthi.php).
+- **Parsi New Year is INSIDE the window, on the last two days.** Pateti falls **Sat 15 Aug 2026** and
+  Navroz **Sun 16 Aug 2026** — because Indian Parsis follow the Shahanshahi calendar, which ignores
+  leap years and so runs roughly 200 days behind the global Nowruz. This matters directly: six
+  entries in the dataset are Parsi or Irani establishments. Sourced:
+  [National Today](https://nationaltoday.com/parsi-new-year/),
+  [Indian Community](https://indian.community/parsi-new-year-festival/),
+  [IndiaBonds](https://www.indiabonds.com/kuchbhi/when-is-parsi-new-year-2026/).
+  - **VERIFY, and it is worth a phone call:** whether Britannia, Ideal Corner, Kyani, Koolar,
+    Mani's and Yazdani close for Navroz, open on reduced hours, or simply fill up. I could not
+    source a closure policy for any of them. The evidence available points to **open but very
+    busy** — one Navroz round-up advises reserving a table at Ideal Corner — but "the sources
+    recommend eating there on Navroz" is not the same as "it is open", and a Parsi family holiday
+    is exactly the kind of day a family-run Parsi restaurant shuts. Ring ahead.
+  - Note Pateti coincides with Independence Day, so Sat 15 Aug carries two things at once.
+- **Janmashtami 2026 is 4 September, with Dahi Handi on 5 September** — also outside the window. The
+  Dadar, Lalbaug and Lower Parel Govinda pyramids are therefore not a factor. Sourced:
+  [PublicHolidays.in](https://publicholidays.in/janmashtami/),
+  [The Online Calendar](https://www.theonlinecalendar.com/blog/janmashtami-2026).
+- **Sat 15 Aug is Independence Day** (FACT). Security restrictions and closures around CSMT, the
+  Gateway, Marine Drive and government buildings remain **VERIFY** — expected, not confirmed. The
+  itinerary routes that day away from the Fort/Colaba core rather than betting on it. One useful
+  hedge is now known: the **Nehru Science Centre is open every day including public holidays.**
+- **Monday closures, partially answered.** Confirmed shut on Mondays: **Café Madras**, **Ideal
+  Corner**, **Kanheri Caves**, **Nehru Planetarium**. Confirmed open every day including Mondays and
+  public holidays: **Nehru Science Centre**. Both bookend days are Mondays, so this list matters and
+  is certainly still incomplete.
+- **A weekly event that does fall inside the window:** Mahim's **St Michael's Church novena runs
+  every Wednesday**, roughly 06:00-21:30 in five languages, at a reported 40,000-50,000 attendees a
+  week. **Wednesday 12 August is inside the trip** — and it is also the day Bhau Daji Lad shuts, so
+  Wednesday now has an anchor rather than a hole.
+
+**Still not sourced: tide times for 10-17 Aug 2026.** The Haji Ali causeway submerges at high tide,
+Marine Drive's wave-overtopping is a high-tide phenomenon, and Sewri's mudflats are tide-dependent.
+Searching surfaced the right stations and services — tide-forecast.com, tides4fishing.com,
+tidetime.org, tidetimesglobal.com — but no actual August 2026 predictions, and this container cannot
+fetch a page to read a table. **No tide figures have been written anywhere in this repository, and
+none will be invented.** Pull a real table before day 5.
 
 ---
 
