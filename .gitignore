@@ -17,3 +17,7 @@ signing.properties
 # OS / editor
 .DS_Store
 *.swp
+
+# Python (tools/ are run directly, never packaged)
+__pycache__/
+*.pyc

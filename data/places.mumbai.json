@@ -969,6 +969,2188 @@
         }
       ],
       "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "britannia-and-co-fort",
+      "name": "Britannia & Co.",
+      "name_local": null,
+      "cluster": "fort-kala-ghoda",
+      "type": [
+        "eat",
+        "heritage"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Britannia & Co Restaurant, Wakefield House, 11 Sprott Road, Ballard Estate, Fort, Mumbai 400001",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "Parsi restaurant in Ballard Estate, open for lunch only, six days a week. Berry pulao — rice with Iranian barberries over spiced meat — is the dish it is known for. Trading since the early 1920s.",
+      "why_locals_rate_it": "It keeps office-lunch hours in a district of offices, so the room fills with people who work in Ballard Estate rather than people touring it, and it closes before any tourist dinner plan could reach it.",
+      "insider_rules": [
+        "Lunch only, and it shuts at 16:00 — an evening plan here does not exist. Arrive by 13:00 or risk the berry pulao running out.",
+        "Cash only. There is no card machine to fall back on, so draw money before you walk over.",
+        "Closed Sunday. Ballard Estate is dead at weekends generally, which is worth knowing before you cross the city for it."
+      ],
+      "hours": {
+        "known": true,
+        "windows": [
+          {
+            "open": "11:30",
+            "close": "16:00",
+            "note": "Lunch service only."
+          }
+        ],
+        "closed_days": [
+          "sun"
+        ],
+        "closed_days_verified": true,
+        "note": "Monday to Saturday, lunch only. Several sources agree on the Sunday closure and the lunch-only pattern."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Indoor and year-round. A working option in heavy rain."
+      },
+      "cost": {
+        "avg_paise": null,
+        "band": "unknown",
+        "cash_only": true,
+        "note": "No verified per-head figure. The cash-only fact is corroborated and is the operationally important one — carry notes."
+      },
+      "duration_minutes": 75,
+      "how_to_get_there": {
+        "nearest_station": "CSMT",
+        "line": "central",
+        "walk_minutes": 15,
+        "best_bus": null,
+        "note": "Walkable from CSMT and from Churchgate. Ballard Estate is a short walk east of the Fort core."
+      },
+      "monsoon_safe": "yes",
+      "monsoon_note": "Indoors and seated. One of the better wet-afternoon plans in the Fort area, though the walk in from the station is exposed.",
+      "diet": [
+        "non-veg"
+      ],
+      "safety_notes": "Ballard Estate is a commercial district, busy on weekday daytimes and quiet outside office hours. No specific concern reported for the lunch window. Assess for yourself after dark, when the area empties.",
+      "accessibility": "Unverified. An old building on a street with uneven pavement — check before relying on step-free access.",
+      "toilet_nearby": null,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "11:30-12:30": "light",
+        "12:30-14:30": "packed",
+        "14:30-16:00": "busy"
+      },
+      "pairs_with": [
+        "ideal-corner-fort",
+        "yazdani-bakery-fort"
+      ],
+      "underrated_basis": [
+        "local-patronage",
+        "needs-local-knowledge",
+        "hyper-specific"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.makemytrip.com/tripideas/attractions/britannia-and-co.-restaurant",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "hours.closed_days"
+          ],
+          "note": "Lunch-only 11:30-16:00, Monday to Saturday, closed Sunday."
+        },
+        {
+          "url": "https://lbb.in/mumbai/guide-eating-britannia-co/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "insider_rules",
+            "cost.cash_only",
+            "what_it_is"
+          ],
+          "note": "Cash only; what to order, berry pulao as the signature."
+        },
+        {
+          "url": "https://migrationology.com/britannia-co-parsi-restaurant-mumbai/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "why_locals_rate_it"
+          ],
+          "note": "Parsi menu and the room's character; first-hand visit account."
+        },
+        {
+          "url": "https://www.zomato.com/mumbai/britannia-company-restaurant-fort",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "geo.osm_query"
+          ],
+          "note": "Address: Wakefield House, 11 Sprott Road, Ballard Estate."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "ideal-corner-fort",
+      "name": "Ideal Corner",
+      "name_local": null,
+      "cluster": "fort-kala-ghoda",
+      "type": [
+        "eat"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Ideal Corner, Hornby View Building, Gunbow Street, Rustom Sidhwa Marg, Fort, Mumbai 400001",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "Small Parsi eating house on Gunbow Street beside the Fort fire brigade. The kitchen runs a different set of specials on each day of the week rather than one fixed menu.",
+      "why_locals_rate_it": "Regulars come on the day their dish is cooked — the weekly rotation means Tuesday and Saturday draw different rooms, which is a pattern you only learn by asking rather than by reading the board.",
+      "insider_rules": [
+        "Closed Mondays. Both the arrival and departure days of this trip are Mondays, so this needs a mid-week slot.",
+        "Ask which specials are on today before ordering — the rotation is the reason to come, and the standing menu is not the point.",
+        "It is small and lunch-focused; going at 12:00 rather than 13:30 is the difference between a table and a wait."
+      ],
+      "hours": {
+        "known": true,
+        "windows": [
+          {
+            "open": "09:00",
+            "close": "16:30",
+            "note": "Reported opening range; full lunch service is roughly 12:00-16:00."
+          }
+        ],
+        "closed_days": [
+          "mon"
+        ],
+        "closed_days_verified": true,
+        "note": "Sources agree on the Monday closure. The daily window is reported as 09:00-16:30 by one listing while another describes lunch as 12:00-16:00 — treat the early morning end as unconfirmed."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Indoor, year-round."
+      },
+      "cost": {
+        "avg_paise": null,
+        "band": "unknown",
+        "cash_only": null,
+        "note": "No verified per-head figure and payment methods unconfirmed. Reported as inexpensive; carry cash on the assumption it may be cash-preferred."
+      },
+      "duration_minutes": 60,
+      "how_to_get_there": {
+        "nearest_station": "CSMT",
+        "line": "central",
+        "walk_minutes": 10,
+        "best_bus": null,
+        "note": "In the Fort street grid behind CSMT, near the fire brigade on Rustom Sidhwa Marg."
+      },
+      "monsoon_safe": "yes",
+      "monsoon_note": "Indoors. The Fort lanes flood at the kerb in heavy rain but the walk from CSMT is short.",
+      "diet": [
+        "non-veg"
+      ],
+      "safety_notes": "A busy commercial lane during business hours. No specific concern reported in the daytime window it is open. The Fort grid empties in the evening, after this has closed anyway.",
+      "accessibility": "Unverified. A small older room with a likely step at the door and no accessible toilet — check before relying on it.",
+      "toilet_nearby": null,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "09:00-12:00": "light",
+        "12:00-14:30": "packed",
+        "14:30-16:30": "light"
+      },
+      "pairs_with": [
+        "britannia-and-co-fort",
+        "yazdani-bakery-fort"
+      ],
+      "underrated_basis": [
+        "local-patronage",
+        "needs-local-knowledge",
+        "hyper-specific"
+      ],
+      "confidence": "medium",
+      "confidence_note": "Existence, location and the Monday closure are corroborated across three independent write-ups. The exact daily window conflicts between sources, and prices and payment methods are unverified.",
+      "sources": [
+        {
+          "url": "https://www.eazydiner.com/mumbai/ideal-corner-fort-223373",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "hours.closed_days",
+            "geo.osm_query"
+          ],
+          "note": "Hours 09:00-16:30 Tue-Sun, closed Monday; full address."
+        },
+        {
+          "url": "https://lbb.in/mumbai/ideal-corner-parsi-food-fort/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "insider_rules"
+          ],
+          "note": "Day-wise specials as the defining feature; lunch focus."
+        },
+        {
+          "url": "https://www.sid-thewanderer.com/2016/06/ideal-corner-restaurant-authentic-parsi-food-in-mumbai.html",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "why_locals_rate_it",
+            "insider_rules"
+          ],
+          "note": "First-hand account naming specific day-rotation dishes."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "yazdani-bakery-fort",
+      "name": "Yazdani Bakery",
+      "name_local": null,
+      "cluster": "fort-kala-ghoda",
+      "type": [
+        "eat",
+        "heritage"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Yazdani Bakery, Patel Street, between PM Road and Veer Nariman Road, Fort, Mumbai 400001",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "Irani bakery on Patel Street baking in a wood-fired clay oven. Brun maska — a hard-crusted bun split and buttered — with Irani chai is the order. Also mawa cake, khari and shrewsbury biscuits.",
+      "why_locals_rate_it": "The oven is the reason: brun goes stale within hours, so a bakery that bakes on site all morning serves a different thing from one that takes deliveries. Fort office workers buy bread here to take home.",
+      "insider_rules": [
+        "Brun is deliberately hard-crusted — dunk it in the chai rather than expecting a soft bun, which is the whole point of the pairing.",
+        "It is a bakery with a few benches, not a cafe. Buy bread to take away as well as chai to drink standing.",
+        "Opens at 07:00, so it works as a pre-08:00 stop when almost nothing else in Fort is serving."
+      ],
+      "hours": {
+        "known": true,
+        "opens_at": "07:00",
+        "closed_days": [],
+        "closed_days_verified": false,
+        "note": "The 07:00 opening is attested by listings. Closing time is NOT verified, and although several write-ups describe it as shut on Sundays I could not confirm that — do not assume it is open on a Sunday and do not assume it is open late."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Indoor, year-round."
+      },
+      "cost": {
+        "avg_paise": null,
+        "band": "unknown",
+        "cash_only": null,
+        "note": "No verified prices. Bakery items here are inexpensive by every account but no source stated figures, so this ships empty. Carry small notes."
+      },
+      "duration_minutes": 25,
+      "how_to_get_there": {
+        "nearest_station": "CSMT",
+        "line": "central",
+        "walk_minutes": 12,
+        "best_bus": null,
+        "note": "On Patel Street between PM Road and Veer Nariman Road, in the Fort grid. Churchgate is a similar walk from the other side."
+      },
+      "monsoon_safe": "yes",
+      "monsoon_note": "Indoors, and an early stop before the day's rain typically builds.",
+      "diet": [
+        "veg",
+        "vegan-possible"
+      ],
+      "safety_notes": "A Fort side street, populated from early morning with deliveries and office traffic. No specific concern reported. The area is quiet before 07:00 and after office hours.",
+      "accessibility": "Unverified. A small old shopfront, likely with a step and no accessible toilet.",
+      "toilet_nearby": null,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "07:00-09:00": "light",
+        "09:00-11:00": "busy",
+        "16:00-19:00": "busy"
+      },
+      "pairs_with": [
+        "britannia-and-co-fort",
+        "ideal-corner-fort"
+      ],
+      "underrated_basis": [
+        "local-patronage",
+        "hyper-specific",
+        "absent-from-top-10-lists"
+      ],
+      "confidence": "medium",
+      "confidence_note": "Existence, location, the clay oven and the brun-maska speciality are corroborated. The opening time rests on listing data, the closing time is unknown, and the widely repeated Sunday closure could not be confirmed.",
+      "sources": [
+        {
+          "url": "https://lbb.in/mumbai/yazdhani-bakery-best-bakery-in-mumbai/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "why_locals_rate_it",
+            "insider_rules"
+          ],
+          "note": "Wood-fired clay oven, brun maska and Irani chai, the bakery's age."
+        },
+        {
+          "url": "https://www.zomato.com/mumbai/yazdani-bakery-restaurant-fort",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.opens_at",
+            "geo.osm_query"
+          ],
+          "note": "07:00 opening and Patel Street address."
+        },
+        {
+          "url": "https://www.tripadvisor.in/Restaurant_Review-g304554-d946004-Reviews-Yazdani_Bakery-Mumbai_Maharashtra.html",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "geo.osm_query",
+            "what_it_is"
+          ],
+          "note": "Location between PM Road and Veer Nariman Road; brun maska reviews."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "david-sassoon-library-kala-ghoda",
+      "name": "David Sassoon Library and Reading Room",
+      "name_local": null,
+      "cluster": "fort-kala-ghoda",
+      "type": [
+        "heritage",
+        "quirk"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "David Sassoon Library and Reading Room, Mahatma Gandhi Road, Kala Ghoda, Fort, Mumbai 400001",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "An 1870 library on MG Road, restored in 2023. Original Minton tile floors, period fittings and deck chairs on the upstairs reading balcony. The reading room proper is for members.",
+      "why_locals_rate_it": "Members treat the balcony as the quietest room in south Mumbai. For everyone else the garden is a free, shaded place to sit in the middle of Kala Ghoda, which the surrounding street does not otherwise offer.",
+      "insider_rules": [
+        "The upstairs reading room and its deck chairs are members-only — annual membership runs into thousands of rupees. Do not arrive expecting the balcony.",
+        "Non-members may use the ground floor and the garden. That is the visit, and it is worth making on those terms rather than being turned away disappointed.",
+        "Ask at the desk before wandering or photographing interiors; it is a working library, not an exhibit."
+      ],
+      "hours": {
+        "known": false,
+        "note": "Opening hours are NOT verified. Sources describe it as generally open on weekdays and Saturdays but explicitly advise contacting the library directly, and I could not read the library's own page from this container. Do not plan a tight schedule around it."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Year-round. The garden is the outdoor part, so heavy rain pushes the visit indoors to the ground floor."
+      },
+      "cost": {
+        "avg_paise": null,
+        "band": "unknown",
+        "cash_only": null,
+        "note": "Whether a non-member pays anything to enter the ground floor and garden is unverified. Membership is reported at roughly Rs 5,000-30,000 a year, which is a different thing from an entry fee."
+      },
+      "duration_minutes": 30,
+      "how_to_get_there": {
+        "nearest_station": "Churchgate",
+        "line": "western",
+        "walk_minutes": 10,
+        "best_bus": null,
+        "note": "On MG Road in Kala Ghoda, between Churchgate and CSMT — walkable from either."
+      },
+      "monsoon_safe": "yes",
+      "monsoon_note": "The building shelters you; the garden does not. In a downpour this becomes a ground-floor visit.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "A guarded heritage building on a main road in a well-populated district. No specific concern. Kala Ghoda is busy through the day and reasonably lit at night.",
+      "accessibility": "Unverified, and an 1870 building with an upper floor reached by stairs — assume the balcony is not step-free even for members.",
+      "toilet_nearby": null,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "unknown",
+      "crowd_level_by_time": {
+        "10:00-13:00": "light",
+        "13:00-17:00": "light"
+      },
+      "pairs_with": [
+        "csmvs-kala-ghoda"
+      ],
+      "underrated_basis": [
+        "needs-local-knowledge",
+        "hyper-specific",
+        "absent-from-top-10-lists"
+      ],
+      "confidence": "medium",
+      "confidence_note": "The building, the 2023 restoration, the members-only reading room and the ground-floor/garden access for visitors are corroborated. Opening hours are entirely unverified, which is the field that would actually waste a journey.",
+      "sources": [
+        {
+          "url": "https://www.outlooktraveller.com/destinations/india/all-you-need-to-know-about-the-david-sassoon-library-in-mumbai",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "insider_rules",
+            "why_locals_rate_it"
+          ],
+          "note": "1870 founding, 2023 restoration, Minton tiles, members-only reading room, membership fee range."
+        },
+        {
+          "url": "https://indagare.com/activity/david-sassoon-library-and-reading-room",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "insider_rules"
+          ],
+          "note": "Deck chairs on the balcony; ground floor and garden open to visitors."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "csmvs-kala-ghoda",
+      "name": "Chhatrapati Shivaji Maharaj Vastu Sangrahalaya",
+      "name_local": "छत्रपती शिवाजी महाराज वस्तु संग्रहालय",
+      "cluster": "fort-kala-ghoda",
+      "type": [
+        "art",
+        "heritage"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Chhatrapati Shivaji Maharaj Vastu Sangrahalaya, 159-161 Mahatma Gandhi Road, Kala Ghoda, Fort, Mumbai 400032",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "The city museum in Kala Ghoda, formerly the Prince of Wales Museum, holding a reported 50,000-plus objects across archaeology, sculpture, miniature painting and a Himalayan and Tibetan collection.",
+      "why_locals_rate_it": "The miniature-painting rooms and the Himalayan gallery are quiet on a weekday while the ground-floor halls take the crowds, so the building rewards knowing which staircase to take first.",
+      "insider_rules": [
+        "Go up to the miniature-painting and Himalayan galleries first — the ground-floor halls absorb the tour groups and the upper rooms stay quiet.",
+        "The ticket counter shuts before the museum does, so a late-afternoon arrival can find the gate open and the counter closed.",
+        "Budget the full stated fee — the Indian-adult price here is materially higher than the neighbouring Bhau Daji Lad museum, which catches people out."
+      ],
+      "hours": {
+        "known": true,
+        "windows": [
+          {
+            "open": "10:15",
+            "close": "18:00",
+            "note": "Ticket counter reported to close at 17:45."
+          }
+        ],
+        "closed_days": [],
+        "closed_days_verified": false,
+        "note": "Reported open daily 10:15-18:00. Whether it closes on any public holiday — including Independence Day, Sat 15 Aug 2026 — is NOT verified, and national holidays do close some Indian museums."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Indoor and year-round. A strong answer to a washed-out August afternoon."
+      },
+      "cost": {
+        "avg_paise": 20000,
+        "band": "100-300",
+        "cash_only": false,
+        "note": "Rs 200 reported for an Indian adult, Rs 250 with audio guide. Single-source and Indian museum fees are frequently misreported online — confirm at the counter and expect this to have moved."
+      },
+      "duration_minutes": 120,
+      "how_to_get_there": {
+        "nearest_station": "Churchgate",
+        "line": "western",
+        "walk_minutes": 10,
+        "best_bus": null,
+        "note": "On MG Road at Kala Ghoda. Roughly ten minutes from Churchgate, a little more from CSMT."
+      },
+      "monsoon_safe": "yes",
+      "monsoon_note": "Fully indoors and large enough to absorb several hours, which makes it one of the better places to be during a heavy spell.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "A ticketed, staffed institution on a main road. No specific concern. The surrounding Kala Ghoda streets are busy by day and moderately quiet after dark.",
+      "accessibility": "Unverified. A colonial-era building with upper floors; ramp and lift provision not established — check on arrival if it matters.",
+      "toilet_nearby": true,
+      "photography_allowed": "unknown",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "10:15-12:00": "light",
+        "12:00-16:00": "busy",
+        "16:00-18:00": "light"
+      },
+      "pairs_with": [
+        "david-sassoon-library-kala-ghoda"
+      ],
+      "underrated_basis": [
+        "needs-local-knowledge",
+        "hyper-specific"
+      ],
+      "confidence": "medium",
+      "confidence_note": "Hours and the Rs 200 Indian-adult fee both come from listing aggregators rather than the museum, and museum fees in India change without the listings following. The building and collection are not in doubt; the price and any holiday closure are.",
+      "sources": [
+        {
+          "url": "https://www.holidify.com/places/mumbai/prince-of-wales-museum-sightseeing-2882.html",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "cost.avg_paise"
+          ],
+          "note": "10:15-18:00, counter closes 17:45, Rs 200 Indian adult / Rs 250 with audio guide."
+        },
+        {
+          "url": "https://www.timeout.com/mumbai/museums/chhatrapati-shivaji-maharaj-vastu-sangrahalaya-csmvs",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "why_locals_rate_it"
+          ],
+          "note": "Collection scope including the Himalayan and miniature-painting holdings."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "sassoon-dock-colaba",
+      "name": "Sassoon Dock",
+      "name_local": null,
+      "cluster": "colaba",
+      "type": [
+        "market",
+        "experience"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Sassoon Dock, Colaba, Mumbai 400005",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "A working wet dock in Colaba where trawlers land the night's catch before dawn and it is auctioned on the quay. Koli fish-sellers sort and move it; by mid-morning the floor is being hosed down.",
+      "why_locals_rate_it": "It is the wholesale end of the city's fish supply rather than a market for visitors, so the pace, the pricing and the language on the quay are all aimed at trade buyers who arrive before 06:00.",
+      "insider_rules": [
+        "Come between 05:00 and 07:30 or there is nothing to see — boats land from around 03:00 and the auction is effectively over by 07:30.",
+        "Photography is restricted because of adjacent naval facilities, and accounts differ on how strictly. Ask before pointing a camera at anyone, and expect to be told no.",
+        "Wear shoes you do not mind ruining. The floor is wet, slick with ice-melt and fish waste, and the smell carries on clothes.",
+        "This is a workplace, not an attraction — stand out of the way of the men carrying crates."
+      ],
+      "hours": {
+        "known": true,
+        "windows": [
+          {
+            "open": "03:30",
+            "close": "10:00",
+            "note": "Auction and peak activity 03:30-07:30; the cycle winds down towards 10:00."
+          }
+        ],
+        "closed_days": [],
+        "closed_days_verified": false,
+        "note": "The pre-dawn working window is corroborated. Whether landings pause on particular days, and how the monsoon fishing ban affects August specifically, is NOT verified — see the monsoon note."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "The dock operates year-round, but India's west-coast monsoon fishing ban and rough-sea days both cut mechanised landings in June-August. Volume in mid-August may be well below the accounts above. Unverified for 2026."
+      },
+      "cost": {
+        "avg_paise": 0,
+        "band": "free",
+        "cash_only": null,
+        "note": "Nothing to pay to walk in. Buying fish is a separate matter and priced for trade quantities."
+      },
+      "duration_minutes": 60,
+      "how_to_get_there": {
+        "nearest_station": "CSMT",
+        "line": "central",
+        "walk_minutes": 35,
+        "best_bus": null,
+        "note": "No station is close. From CSMT or Churchgate this is a taxi at that hour, which is straightforward — the kaali-peeli night surcharge of 25% ends at 05:00."
+      },
+      "monsoon_safe": "conditional",
+      "monsoon_note": "Open quayside with no shelter, and a floor that is already wet before any rain. In a heavy August downpour this is miserable, and the catch may be thin because of the fishing ban.",
+      "diet": [
+        "non-veg"
+      ],
+      "safety_notes": "Pre-dawn industrial site: slippery ground, moving vehicles, heavy crates. Naval facilities adjoin it, so do not photograph installations or argue with anyone who objects to a camera. Accounts of solo visits are common but a guide is repeatedly recommended, and the surrounding streets at 05:00 are quiet.",
+      "accessibility": "Poor. Wet uneven quay, crates and hoses underfoot, no step-free route described by any source.",
+      "toilet_nearby": null,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "03:30-05:00": "busy",
+        "05:00-07:30": "packed",
+        "07:30-10:00": "light"
+      },
+      "underrated_basis": [
+        "local-patronage",
+        "needs-local-knowledge",
+        "hyper-specific"
+      ],
+      "confidence": "medium",
+      "confidence_note": "The 03:30-07:30 working window is corroborated across three independent accounts. Sources disagree on whether photography is flatly prohibited or merely restricted, and no source I found addressed how the monsoon fishing ban affects August landings — that gap could mean arriving to a near-empty dock.",
+      "sources": [
+        {
+          "url": "https://www.goya.in/blog/6-am-at-sassoon-docks",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "what_it_is",
+            "why_locals_rate_it"
+          ],
+          "note": "First-hand 06:00 account of the auction and the sorting floor."
+        },
+        {
+          "url": "https://questionofcities.org/walk-through-mumbais-oldest-dock-meet-its-fishing-community/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "why_locals_rate_it",
+            "safety_notes"
+          ],
+          "note": "The Koli community and the dock as a workplace rather than a sight."
+        },
+        {
+          "url": "https://www.punnaka.com/blog-info/shopping-places/sassoon-dock-fish-market-mumbai",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "insider_rules"
+          ],
+          "note": "Boats from ~03:00, auction window, photography restriction near naval facilities."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "kyani-and-co-marine-lines",
+      "name": "Kyani & Co.",
+      "name_local": null,
+      "cluster": "churchgate-marine-lines",
+      "type": [
+        "eat",
+        "heritage"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Kyani & Co, Jer Mahal Estate, JSS Road, opposite Metro Cinema, Marine Lines, Mumbai 400002",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "Irani cafe opposite Metro Cinema, trading since 1904. Bentwood chairs, marble tables and a bakery counter. Irani chai and bun maska, mutton kheema pav, mawa cake and caramel custard.",
+      "why_locals_rate_it": "One of a shrinking number of Irani cafes still running as a cafe rather than as a restaurant that used to be one — you can sit with one chai for an hour without anyone hurrying you, which is the institution's actual function.",
+      "insider_rules": [
+        "Order chai with bun maska together and dunk — the bun is buttered cold and the chai is sweet and strong on purpose.",
+        "The kheema pav is the substantial order and the mawa cake is the thing to take away; the bakery counter is separate from the table service.",
+        "Open from 07:00, which makes it a rare early-breakfast option in a district that otherwise starts at 09:00."
+      ],
+      "hours": {
+        "known": true,
+        "windows": [
+          {
+            "open": "07:00",
+            "close": "20:00",
+            "note": "One listing gives a later close of about 20:45."
+          }
+        ],
+        "closed_days": [],
+        "closed_days_verified": false,
+        "note": "Reported open daily 07:00-20:00, with one source saying 20:45. No weekly closure is reported by any source, but none confirms there is none either."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Indoor, year-round."
+      },
+      "cost": {
+        "avg_paise": 15000,
+        "band": "100-300",
+        "cash_only": null,
+        "note": "Derived: roughly Rs 300 for two is widely listed, so about Rs 150 a head. Individually reported: Irani chai about Rs 15, mutton kheema pav about Rs 75. Aggregator pricing, unconfirmed on site."
+      },
+      "duration_minutes": 45,
+      "how_to_get_there": {
+        "nearest_station": "Marine Lines",
+        "line": "western",
+        "walk_minutes": 7,
+        "best_bus": null,
+        "note": "On JSS Road opposite Metro Cinema. Marine Lines on Western is closest; CSMT is about fifteen minutes on foot."
+      },
+      "monsoon_safe": "yes",
+      "monsoon_note": "Indoors with table service — a place to wait out a downpour rather than fight it.",
+      "diet": [
+        "veg",
+        "non-veg"
+      ],
+      "safety_notes": "A main-road cafe in a busy central district, open from early morning to evening. No specific concern reported, including for solo visitors.",
+      "accessibility": "Unverified. An old ground-floor room; a step at the entrance is likely and no accessible toilet is described.",
+      "toilet_nearby": null,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "07:00-09:00": "light",
+        "09:00-12:00": "busy",
+        "16:00-20:00": "busy"
+      },
+      "underrated_basis": [
+        "local-patronage",
+        "hyper-specific"
+      ],
+      "confidence": "medium",
+      "confidence_note": "The cafe, its 1904 founding and what to order are corroborated across four write-ups. Hours come from listings and conflict slightly at the closing end; prices are aggregator-derived and no source confirms whether it ever shuts for a weekly day.",
+      "sources": [
+        {
+          "url": "https://thetastytales.com/kyani-and-co-mumbai-1904/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "why_locals_rate_it"
+          ],
+          "note": "1904 founding, the room and its fittings, what the cafe is."
+        },
+        {
+          "url": "https://curlytales.com/mumbais-oldest-parsi-cafe-kyani-co/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "cost.avg_paise",
+            "insider_rules"
+          ],
+          "note": "Mutton kheema pav at about Rs 75; the dishes to order."
+        },
+        {
+          "url": "https://www.eazydiner.com/mumbai/kyani-co-marine-lines-223025/about",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "geo.osm_query",
+            "cost.avg_paise"
+          ],
+          "note": "Hours, JSS Road address opposite Metro Cinema, approximate cost for two."
+        },
+        {
+          "url": "https://lbb.in/mumbai/kyani-and-co/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "insider_rules",
+            "what_it_is"
+          ],
+          "note": "Chai, bun maska and the bakery counter; elaichi chai."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "marine-drive-promenade",
+      "name": "Marine Drive promenade",
+      "name_local": null,
+      "cluster": "churchgate-marine-lines",
+      "type": [
+        "walk",
+        "viewpoint"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Marine Drive promenade, Netaji Subhash Chandra Bose Road, Churchgate, Mumbai 400020",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "The sea wall and walkway along Back Bay, fronted by tetrapods. In monsoon, high tide against a south-west wind sends waves breaking over the wall onto the pavement and road.",
+      "why_locals_rate_it": "In August the draw is the opposite of the postcard: people come specifically for the overtopping waves at high tide, and the stretch north of Churchgate stays local because the tour buses stop further south.",
+      "insider_rules": [
+        "The wave-overtopping needs high tide plus onshore wind — check the day's tide before walking down, because at low tide it is simply a wide pavement.",
+        "Stay behind the railing and off the tetrapods. People are swept off them and killed every monsoon, and this is the single most dangerous thing in this dataset.",
+        "Police close or restrict the promenade during red-alert and high-tide combinations, so a plan here can be cancelled on the day.",
+        "Walk the northern end towards Marine Lines rather than the Nariman Point end if you want it quieter."
+      ],
+      "hours": {
+        "known": true,
+        "always_open": true,
+        "note": "A public seafront with no gate. Access can be restricted by police during severe weather."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Year-round, but it is a different place in monsoon. June-September is when the waves come over the wall, which is both the attraction and the hazard."
+      },
+      "cost": {
+        "avg_paise": 0,
+        "band": "free",
+        "cash_only": null,
+        "note": "Public street."
+      },
+      "duration_minutes": 45,
+      "how_to_get_there": {
+        "nearest_station": "Churchgate",
+        "line": "western",
+        "walk_minutes": 8,
+        "best_bus": null,
+        "note": "Churchgate for the middle of the stretch, Marine Lines for the northern end."
+      },
+      "monsoon_safe": "conditional",
+      "monsoon_note": "Exposed, and deliberately so. Fine in light rain with care; genuinely dangerous at high tide in a heavy blow, when it may also be closed.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "Drowning is the real risk: waves break over the wall and people are swept off the tetrapods and killed every monsoon, tetrapod photographs being specifically cited. Stay behind the barriers. Otherwise a busy, well-lit and heavily policed public space, comfortable alone including after dark.",
+      "accessibility": "The promenade itself is a long flat paved walkway, which makes it one of the more wheelchair-plausible entries here — though kerb cuts and crossing the road are unverified, and spray makes it slick.",
+      "toilet_nearby": null,
+      "photography_allowed": "yes",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "06:00-09:00": "light",
+        "09:00-17:00": "light",
+        "17:00-21:00": "busy"
+      },
+      "pairs_with": [
+        "kyani-and-co-marine-lines"
+      ],
+      "underrated_basis": [
+        "needs-local-knowledge",
+        "hyper-specific"
+      ],
+      "confidence": "medium",
+      "confidence_note": "The monsoon overtopping, the police restrictions and the tetrapod deaths are all corroborated by news reporting and a monsoon guide. What is NOT available is tide predictions for 10-17 August 2026, which is exactly what you would need to time a visit — that remains unsourced and must not be guessed.",
+      "sources": [
+        {
+          "url": "https://www.india.com/news/india/mumbai-rains-high-tide-hits-marine-drive-amid-red-alert-check-imd-forecast-for-palghar-thane-raigad-thunderstorm-waterlogging-potholes-8467045/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "insider_rules",
+            "safety_notes"
+          ],
+          "note": "High tide over the promenade during a red alert; police increasing vigilance and restricting access."
+        },
+        {
+          "url": "https://mumbaiitinerary.com/mumbai-monsoon-guide",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "insider_rules",
+            "safety_notes",
+            "monsoon_note"
+          ],
+          "note": "Waves over the wall at high tide plus heavy rain; stay back from the edge; deaths from tetrapod photographs."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "khotachiwadi-girgaon",
+      "name": "Khotachiwadi",
+      "name_local": "खोताचीवाडी",
+      "cluster": "girgaon-charni-road",
+      "type": [
+        "walk",
+        "heritage"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Khotachiwadi heritage precinct, Girgaon, Mumbai 400004",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "A Grade III heritage precinct of lanes in Girgaon, settled in the 1800s by the East Indian Catholic community. Indo-Portuguese houses with wooden balconies and external stairs. Around 28 of an original 65 survive.",
+      "why_locals_rate_it": "It is somebody's street. The houses are lived in, the crosses at the lane ends are still used, and the reason it survives at all is residents refusing redevelopment — which is why visiting it well means behaving like a guest.",
+      "insider_rules": [
+        "This is a residential lane, not a site. Ask before photographing a house or a person, and do not step into doorways or courtyards.",
+        "Go on a weekday morning if you want it quiet; keep your voice down whatever the hour.",
+        "The lanes are narrow and easy to walk past — enter from the Girgaon side and expect it to feel like a private cul-de-sac, because it is one.",
+        "There is nothing to buy and no ticket office. Half an hour is the whole visit."
+      ],
+      "hours": {
+        "known": true,
+        "always_open": true,
+        "note": "Public residential lanes with no gate. Daylight hours only is the courteous reading rather than a rule."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Year-round. The lanes are open to the sky, so a downpour ends the walk."
+      },
+      "cost": {
+        "avg_paise": 0,
+        "band": "free",
+        "cash_only": null,
+        "note": "No entry fee. Guided heritage walks are occasionally run by residents and organisations and would be priced separately; none verified here."
+      },
+      "duration_minutes": 40,
+      "how_to_get_there": {
+        "nearest_station": "Charni Road",
+        "line": "western",
+        "walk_minutes": 12,
+        "best_bus": null,
+        "note": "Charni Road or Grant Road on Western, then a short walk or a rickshaw to the Girgaon entrance."
+      },
+      "monsoon_safe": "conditional",
+      "monsoon_note": "Open lanes with balconies but no continuous cover. Fine in light rain, over in heavy rain — and Girgaon's streets flood at the kerb.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "A quiet residential precinct in a dense central neighbourhood; no specific concern reported and residents are used to visitors. The risk here is causing offence rather than coming to harm. Avoid after dark, when walking through someone's lane reads differently.",
+      "accessibility": "Narrow uneven lanes with steps up to most houses. Not step-free.",
+      "toilet_nearby": false,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "08:00-11:00": "empty",
+        "11:00-17:00": "light",
+        "17:00-19:00": "light"
+      },
+      "underrated_basis": [
+        "needs-local-knowledge",
+        "hyper-specific",
+        "local-patronage"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://thedecorjournalindia.com/khotachiwadi-portuguese-village-mumbai",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "why_locals_rate_it"
+          ],
+          "note": "Founding by the East Indian community, Dadoba Waman Khot, Indo-Portuguese architecture, teak stairways."
+        },
+        {
+          "url": "http://www.sahapedia.org/khotichawadi-heritage-village-mumbai",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "why_locals_rate_it"
+          ],
+          "note": "Heritage precinct status and the community's history; scholarly treatment."
+        },
+        {
+          "url": "https://homegrown.co.in/homegrown-explore/spending-a-lazy-sunday-afternoon-in-mumbais-khotachiwadi",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "insider_rules"
+          ],
+          "note": "House count down from 65 to about 28; the residential character and visitor etiquette."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "banganga-tank-walkeshwar",
+      "name": "Banganga Tank",
+      "name_local": "बाणगंगा तळे",
+      "cluster": "girgaon-charni-road",
+      "type": [
+        "heritage",
+        "religious",
+        "walk"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Banganga Tank, Walkeshwar, Malabar Hill, Mumbai 400006",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "A rectangular spring-fed temple tank on Malabar Hill, stepped on all four sides and ringed by small shrines, dharamshalas and cremation ghats. Dated to 1127 CE, built under the Silhara kings.",
+      "why_locals_rate_it": "It functions as a working religious precinct rather than a monument — priests, residents and funeral parties use it daily — and it sits a hundred metres from the sea while holding fresh water, which is why it was built here.",
+      "insider_rules": [
+        "The tank is open ground and always accessible; the temples around it keep their own hours and several shut in the early afternoon to wash the deities. Do not assume one visit gets you both.",
+        "Cremation ghats are part of the precinct. If a funeral is in progress, put the camera away entirely and keep to the far side.",
+        "Come down the steps on the far side from the main approach for the view back across the water, and go barefoot where the paving is marked as temple ground.",
+        "Reaching it means descending from Malabar Hill through lanes that are not signposted — allow for getting lost."
+      ],
+      "hours": {
+        "known": true,
+        "always_open": true,
+        "note": "The tank itself is open ground with no gate. The surrounding temples have hours and those hours conflict across sources — see the confidence note."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Year-round. Monsoon fills the tank and makes the stone steps slippery."
+      },
+      "cost": {
+        "avg_paise": 0,
+        "band": "free",
+        "cash_only": null,
+        "note": "No entry fee to the tank or the precinct."
+      },
+      "duration_minutes": 45,
+      "how_to_get_there": {
+        "nearest_station": "Charni Road",
+        "line": "western",
+        "walk_minutes": 25,
+        "best_bus": null,
+        "note": "Charni Road then a rickshaw or taxi up Malabar Hill; the final approach is on foot down lanes. Filed under the girgaon-charni-road cluster because Walkeshwar has no cluster of its own — it is up the hill from Girgaon, not in it."
+      },
+      "monsoon_safe": "conditional",
+      "monsoon_note": "Open to the sky and entirely stone. Wet steps beside deep water is a genuine slip risk, and worth skipping in a downpour.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "A residential and religious precinct, busy with locals by day. The steps are steep, wet in monsoon and unfenced beside deep water. Dress modestly. Quiet lanes after dark; daylight is the sensible window for a first visit.",
+      "accessibility": "Poor. The entire site is steps down to the water, reached through narrow lanes. No step-free route.",
+      "toilet_nearby": null,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "06:00-09:00": "light",
+        "09:00-13:00": "light",
+        "17:00-20:00": "busy"
+      },
+      "underrated_basis": [
+        "needs-local-knowledge",
+        "hyper-specific",
+        "local-patronage"
+      ],
+      "confidence": "medium",
+      "confidence_note": "The tank, its 1127 CE date and Silhara-era construction are corroborated across three sources. Temple hours conflict badly — one source gives 06:00-19:00, another 09:00-13:00 and 17:00-20:00, a third says the temples shut 13:00-16:00 for cleaning. The tank being open ground resolves this for planning purposes, but do not rely on any specific temple being open.",
+      "sources": [
+        {
+          "url": "https://exhibits.jioinstitute.edu.in/spotlight/banganga-tank",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is"
+          ],
+          "note": "1127 CE construction, Lakshmana Prabhu under the Silhara kings; scholarly exhibit."
+        },
+        {
+          "url": "https://the-heritage-files.odoo.com/blog/evergreen-4/banganga-tank-the-sacred-spring-that-keeps-mumbai-s-ancient-soul-alive-26",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "why_locals_rate_it"
+          ],
+          "note": "Spring-fed fresh water beside the sea; the stepped tank and surrounding precinct."
+        },
+        {
+          "url": "https://tripxl.com/blog/walkeshwar-temple/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours",
+            "how_to_get_there.nearest_station"
+          ],
+          "note": "Temple complex hours (conflicting with other sources) and access from Charni Road."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "chor-bazaar-mutton-street",
+      "name": "Chor Bazaar (Mutton Street)",
+      "name_local": null,
+      "cluster": "byculla-bhendi-bazaar",
+      "type": [
+        "market",
+        "shop"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Mutton Street, Chor Bazaar, Bhendi Bazaar, Mumbai 400003",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "The antiques row off Bhendi Bazaar: shopfronts of clocks, gramophones, enamel signs, brass, film posters and salvaged fittings, mixed with a great deal of recent reproduction.",
+      "why_locals_rate_it": "Dealers here supply the city's set designers and restorers, so the stock turns over on trade demand rather than tourist taste, and the good material is usually behind the counter rather than on the street.",
+      "insider_rules": [
+        "Bargain hard and expect to. Opening asks are reported at two-and-a-half to four times the real price; a realistic close is around 35-45% of the first quote on antiques and 25-35% on reproductions.",
+        "Assume anything presented as old is a reproduction until you have reason to think otherwise. Reproduction gramophones and 'vintage' signs are made for this market.",
+        "Fridays are unreliable — shops shut for Jumma prayers and sources disagree on whether the rest of the day recovers. Pick another day.",
+        "Ask to see what is not on display; the stock worth having is often inside."
+      ],
+      "hours": {
+        "known": true,
+        "windows": [
+          {
+            "open": "11:00",
+            "close": "19:30",
+            "note": "One source describes shops setting up from around 09:00, which conflicts with an 11:00 opening."
+          }
+        ],
+        "closed_days": [
+          "fri"
+        ],
+        "closed_days_verified": false,
+        "note": "Hours are disputed. One source: Saturday to Thursday 11:00-19:30, closed Friday afternoon for Jumma with most shops reopening by 16:00. Another: closed Fridays apart from a dawn trade-only market roughly 04:00-08:00. The Friday position is genuinely unresolved, so it is marked closed as the conservative reading."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Year-round. Shopfronts give some cover but the lanes do not."
+      },
+      "cost": {
+        "avg_paise": null,
+        "band": "unknown",
+        "cash_only": null,
+        "note": "Nothing to pay to browse. Purchase prices are entirely negotiable, which is why no figure is given here. Carry cash and assume cards are not taken."
+      },
+      "duration_minutes": 90,
+      "how_to_get_there": {
+        "nearest_station": "Grant Road",
+        "line": "western",
+        "walk_minutes": 15,
+        "best_bus": null,
+        "note": "Grant Road on Western or Sandhurst Road on Harbour, then into the Bhendi Bazaar lanes on foot. Mutton Street is easy to miss — it is a named lane, not a signposted market."
+      },
+      "monsoon_safe": "conditional",
+      "monsoon_note": "Covered shopfronts but open lanes between them, and this part of the city drains badly. Workable in light rain, unpleasant in heavy.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "A crowded commercial lane; the usual dense-market pickpocket caution applies and bags are best worn in front. Reports of hard selling rather than danger. Narrow, busy and male-dominated by day; not a place to browse alone after dark.",
+      "accessibility": "Poor. Narrow crowded lanes, goods spilling onto the path, steps up into most shops.",
+      "toilet_nearby": null,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "09:00-11:00": "light",
+        "11:00-17:00": "busy",
+        "17:00-19:30": "busy"
+      },
+      "pairs_with": [
+        "bhau-daji-lad-museum"
+      ],
+      "underrated_basis": [
+        "needs-local-knowledge",
+        "hyper-specific",
+        "local-patronage"
+      ],
+      "confidence": "medium",
+      "confidence_note": "The market, its location on Mutton Street and the bargaining ratios are corroborated. The trading hours and especially the Friday position conflict outright between sources, and an 09:00 setting-up claim contradicts an 11:00 opening. Do not build a tight plan on the stated window.",
+      "sources": [
+        {
+          "url": "https://magicpin.in/blog/india/mumbai/Travel/chor-bazaar-mumbai",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "hours.closed_days",
+            "geo.osm_query"
+          ],
+          "note": "Saturday-Thursday 11:00-19:30, Friday Jumma closure with afternoon reopening, Mutton Street address."
+        },
+        {
+          "url": "https://indiaesque.com/mumbai/chor-bazaar-mumbai/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "insider_rules",
+            "what_it_is",
+            "hours"
+          ],
+          "note": "Bargaining ratios, reproduction warning, the dawn Friday trade market."
+        },
+        {
+          "url": "https://mumbaitourism.travel/chor-bazaar-mumbai",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "geo.osm_query"
+          ],
+          "note": "Mutton Street as the antiques row and what is sold there."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "sewri-fort",
+      "name": "Sewri Fort",
+      "name_local": null,
+      "cluster": "sewri-mazgaon",
+      "type": [
+        "heritage",
+        "viewpoint"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Sewri Fort, Sewri Fort Road, Sewri, Mumbai 400015",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "A small early-18th-century British watch fort on a rise above Sewri's mudflats, now an overgrown ruin with open ramparts looking east across the harbour towards Nhava Sheva.",
+      "why_locals_rate_it": "It is a free, unstaffed ruin ten minutes from a station in the middle of an industrial docklands, which almost nobody visits outside flamingo season — so the ramparts are usually empty.",
+      "insider_rules": [
+        "The walk in is the hard part: from the north end of Sewri station cross at the level crossing, take Sewri Koliwada Road opposite, bear left at the Y, and the steps up are beside the Colgate-Palmolive factory.",
+        "There is nobody there — no ticket desk, no guard, no lighting. Go in daylight and preferably not alone.",
+        "The flamingos are the usual reason people come and they are NOT here in August. They are winter migrants, roughly November to March. Come for the fort and the harbour view, or do not come.",
+        "Snakes and dense undergrowth are a real prospect in monsoon. Stick to trodden ground and wear closed shoes."
+      ],
+      "hours": {
+        "known": true,
+        "windows": [
+          {
+            "open": "07:00",
+            "close": "18:00"
+          }
+        ],
+        "closed_days": [],
+        "closed_days_verified": false,
+        "note": "Reported 07:00-18:00 daily, but the site is an unstaffed open ruin so these hours describe courtesy and daylight rather than a gate that is locked. No weekly closure reported or confirmed."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "The fort stands year-round and the harbour view does not change. The FLAMINGOS, which are why most people come, are November-March only — mid-August visitors will see mudflats and no birds. Monsoon also brings heavy undergrowth."
+      },
+      "cost": {
+        "avg_paise": 0,
+        "band": "free",
+        "cash_only": null,
+        "note": "No entry fee and no ticket desk."
+      },
+      "duration_minutes": 60,
+      "how_to_get_there": {
+        "nearest_station": "Sewri",
+        "line": "harbour",
+        "walk_minutes": 10,
+        "best_bus": null,
+        "note": "Sewri on the Harbour line, then under ten minutes on foot via Sewri Koliwada Road and Sewri Fort Road. The route is unsignposted."
+      },
+      "monsoon_safe": "conditional",
+      "monsoon_note": "An exposed ruin with no shelter, reached across an industrial area, with overgrown and slippery stonework in the rain. Possible in light rain with care, poor in heavy.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "Isolated and unstaffed, in a docklands and industrial setting, with dense monsoon undergrowth and unfenced ramparts. Going alone is not advised, particularly for women, and there is no one to call on site. Daylight only.",
+      "accessibility": "Poor. Reached by a flight of steps up from the road, with rough uneven ground and vegetation throughout.",
+      "toilet_nearby": false,
+      "photography_allowed": "yes",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "07:00-10:00": "empty",
+        "10:00-17:00": "empty"
+      },
+      "underrated_basis": [
+        "absent-from-top-10-lists",
+        "needs-local-knowledge",
+        "hyper-specific"
+      ],
+      "confidence": "medium",
+      "confidence_note": "Free entry, the walking route from Sewri station and the flamingo season are corroborated across three sources. The 07:00-18:00 hours are reported but meaningless at an unstaffed ruin, and no source addressed the state of the site in monsoon — the undergrowth and snake caution is inference from it being an overgrown ruin, not a sourced claim.",
+      "sources": [
+        {
+          "url": "https://mumbai7.com/sewri-fort/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "insider_rules",
+            "what_it_is"
+          ],
+          "note": "Step-by-step walking route from Sewri station; hours; the fort's condition."
+        },
+        {
+          "url": "https://audiala.com/en/india/mumbai/sewri-fort",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "cost",
+            "hours.windows",
+            "what_it_is"
+          ],
+          "note": "Free entry, daily hours, history of the watch fort."
+        },
+        {
+          "url": "https://tripxl.com/blog/sewri-fort/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "season.note",
+            "what_it_is"
+          ],
+          "note": "Mudflats and flamingos as November-February/March; best season guidance."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "ranwar-village-bandra",
+      "name": "Ranwar village and Chapel Road",
+      "name_local": null,
+      "cluster": "mahim-bandra-west",
+      "type": [
+        "walk",
+        "heritage"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Ranwar village, Waroda Road and Chapel Road, Bandra West, Mumbai 400050",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "One of Bandra's surviving East Indian gaothan hamlets, in the lanes between Hill Road and Mount Carmel Road. Tiled-roof cottages with external stairs and wooden porches, wayside crosses, and street art along Chapel Road.",
+      "why_locals_rate_it": "The lanes are still occupied by the families the village belongs to, and the crosses at the junctions are maintained rather than preserved — it reads as a village inside Bandra rather than a heritage exhibit of one.",
+      "insider_rules": [
+        "Residential lanes: ask before photographing houses or people, and do not walk into porches or courtyards to get an angle.",
+        "Waroda Road and Chapel Road are the two to walk; the connecting lanes between them are where the older cottages are.",
+        "Sunday mornings the village is at church and the lanes are quiet — the courteous time to walk is late morning on a weekday.",
+        "There is no entrance and no marker. If it feels like you have wandered into somebody's cul-de-sac, you are in the right place."
+      ],
+      "hours": {
+        "known": true,
+        "always_open": true,
+        "note": "Public residential lanes, no gate. Daylight is the courteous window rather than a rule."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Year-round. Open lanes, so heavy rain ends the walk."
+      },
+      "cost": {
+        "avg_paise": 0,
+        "band": "free",
+        "cash_only": null,
+        "note": "No fee. Guided Bandra heritage walks exist, including free ones, and are priced separately — none verified here."
+      },
+      "duration_minutes": 60,
+      "how_to_get_there": {
+        "nearest_station": "Bandra",
+        "line": "western",
+        "walk_minutes": 15,
+        "best_bus": null,
+        "note": "Bandra station on Western, then west via Hill Road. The lanes sit between Hill Road and Mount Carmel Road."
+      },
+      "monsoon_safe": "conditional",
+      "monsoon_note": "Narrow open lanes with porches to shelter under but no continuous cover. Fine in a shower, not in a downpour.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "A quiet, well-populated residential precinct in one of the city's more relaxed neighbourhoods; no specific concern reported and comfortable alone by day. As with any lived-in lane, the risk is intruding rather than being harmed.",
+      "accessibility": "Uneven narrow lanes with steps up to the cottages. Not step-free, though the through-lanes themselves are walkable.",
+      "toilet_nearby": false,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "08:00-11:00": "empty",
+        "11:00-17:00": "light",
+        "17:00-20:00": "light"
+      },
+      "underrated_basis": [
+        "needs-local-knowledge",
+        "hyper-specific",
+        "local-patronage"
+      ],
+      "confidence": "medium",
+      "confidence_note": "The village, its East Indian gaothan character, the street layout and the architecture are corroborated across three sources. The founding date conflicts — one source dates it to 1716, another calls it roughly 400 years old — so no date is asserted in the prose.",
+      "sources": [
+        {
+          "url": "https://lbb.in/mumbai/enjoy-sound-silence-walk-ranwar-village/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "geo.osm_query",
+            "insider_rules"
+          ],
+          "note": "Location between Waroda and Chapel Roads; the lanes and cottages; 1716 dating."
+        },
+        {
+          "url": "https://theculturetrip.com/asia/india/articles/the-historic-mumbai-villages-of-bandra",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "why_locals_rate_it"
+          ],
+          "note": "Bandra's East Indian villages and the gaothan system; roughly 400 years old."
+        },
+        {
+          "url": "https://ianwalksmumbai.com/tours/free-walking-tour-bandra-2/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "insider_rules",
+            "what_it_is"
+          ],
+          "note": "Walking route through the Ranwar heritage precinct; which lanes to take."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "ghatkopar-khau-galli",
+      "name": "Ghatkopar Khau Galli",
+      "name_local": "घाटकोपर खाऊ गल्ली",
+      "cluster": "ghatkopar-chembur",
+      "type": [
+        "eat",
+        "market"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Khau Galli, Vallabh Baug Lane, opposite Gandhi Market, Ghatkopar East, Mumbai 400077",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "An entirely vegetarian evening street-food lane on Vallabh Baug Lane in Ghatkopar East. Dozens of dosa variants, pav bhaji, chaat, frankies, gola and sandwiches, from around 16:30 to late.",
+      "why_locals_rate_it": "It serves a Gujarati and Jain suburb, so the whole lane is vegetarian by default rather than by request — and Jain versions, including Jain pani puri, are a standing part of the menu rather than a favour.",
+      "insider_rules": [
+        "Nothing opens until about 16:30. A lunchtime visit finds a closed lane.",
+        "Jain pani puri is available near Guru Kripa — worth knowing, because Jain street food elsewhere in the city means negotiating with each stall.",
+        "The whole lane is vegetarian, so there is no need to ask stall by stall.",
+        "Go around 17:30 rather than 20:00 if you want to move: the crowd thickens through the evening and the lane is narrow."
+      ],
+      "hours": {
+        "known": true,
+        "opens_at": "16:30",
+        "closed_days": [],
+        "closed_days_verified": false,
+        "note": "Open seven days from about 16:30. Most stalls are reported to run to around midnight, but as individual carts with their own closing times there is no single verified closing hour, so only the opening is recorded."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Year-round, but it is a street lane — heavy August rain thins the stalls and the crowd both."
+      },
+      "cost": {
+        "avg_paise": null,
+        "band": "unknown",
+        "cash_only": null,
+        "note": "No verified figures. Street-cart pricing per item is low, and most carts take UPI in practice, but neither is sourced here. Carry small notes."
+      },
+      "duration_minutes": 75,
+      "how_to_get_there": {
+        "nearest_station": "Ghatkopar",
+        "line": "central",
+        "walk_minutes": 8,
+        "best_bus": null,
+        "note": "Ghatkopar is on the Central line and is the eastern terminus of Metro-1, so it is reachable from the Western suburbs without going via town. The lane is opposite Gandhi Market."
+      },
+      "monsoon_safe": "conditional",
+      "monsoon_note": "Open-air carts with tarpaulins. It functions in light rain and empties out in heavy rain, and street food in standing water is worth avoiding.",
+      "diet": [
+        "veg",
+        "jain-available"
+      ],
+      "safety_notes": "A busy family-heavy evening lane in a residential suburb; comfortable alone including for women, into the evening. Standard street-food caution applies — eat where there is turnover, and be wary of anything sitting in water during monsoon.",
+      "accessibility": "A flat street, but narrow and very crowded from early evening with carts encroaching on the walkway. Difficult in a wheelchair once busy.",
+      "toilet_nearby": null,
+      "photography_allowed": "yes",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "16:30-17:30": "light",
+        "17:30-20:00": "busy",
+        "20:00-23:00": "packed"
+      },
+      "underrated_basis": [
+        "local-patronage",
+        "hyper-specific"
+      ],
+      "confidence": "medium",
+      "confidence_note": "The lane, its vegetarian-only character, the Jain pani puri near Guru Kripa and the 16:30 start are corroborated. The closing time is not verifiable for a lane of independent carts, and no prices are sourced.",
+      "sources": [
+        {
+          "url": "https://lbb.in/mumbai/ghatkopar-khau-galli/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "insider_rules",
+            "diet"
+          ],
+          "note": "Vegetarian lane; Jain pani puri near Guru Kripa; what to eat."
+        },
+        {
+          "url": "https://lbb.in/mumbai/ghatkopar-khau-galli-vegetarian-street-food/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "why_locals_rate_it"
+          ],
+          "note": "The range of dosa and chaat; the suburb's vegetarian character."
+        },
+        {
+          "url": "https://mumbaimetroroute.com/places/khau-galli-ghatkopar",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.opens_at",
+            "geo.osm_query",
+            "how_to_get_there.nearest_station"
+          ],
+          "note": "Opens about 16:30 seven days; Vallabh Baug Lane address; station and metro access."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "aarey-picnic-point",
+      "name": "Aarey Picnic Point",
+      "name_local": null,
+      "cluster": "goregaon-aarey",
+      "type": [
+        "nature",
+        "walk"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Picnic Point, Dinkarrao Desai Road, Aarey Milk Colony, Goregaon East, Mumbai 400065",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "A garden and pond on Dinkarrao Desai Road inside Aarey Milk Colony, past Chhota Kashmir. Aarey is roughly 3,800 acres of dairy land and forest continuous with Sanjay Gandhi National Park.",
+      "why_locals_rate_it": "Monsoon is the season here rather than the obstacle: the colony greens over, the birds arrive, and Mumbai residents use Aarey as the nearest thing to being out of the city without leaving it.",
+      "insider_rules": [
+        "August is the point. Aarey in monsoon is green and full of birds, which is the opposite of most outdoor entries in this dataset.",
+        "Picnic Point runs 08:00-19:00 daily; the wider colony has no gate but the road in is long, so going without wheels means a lot of walking.",
+        "Chhota Kashmir, on the way, has boating for a nominal charge — a separate stop, not part of Picnic Point.",
+        "This is a leopard landscape shared with SGNP. Do not walk the forest edges at dusk, and keep to the roads and the garden."
+      ],
+      "hours": {
+        "known": true,
+        "windows": [
+          {
+            "open": "08:00",
+            "close": "19:00"
+          }
+        ],
+        "closed_days": [],
+        "closed_days_verified": false,
+        "note": "Picnic Point reported open 08:00-19:00, seven days. Entry to Aarey Milk Colony itself is free and ungated. No weekly closure reported or confirmed."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Open year-round and best in and just after monsoon, June-October, when it is green and birdlife is high. This is one of the few entries here that August improves."
+      },
+      "cost": {
+        "avg_paise": null,
+        "band": "unknown",
+        "cash_only": null,
+        "note": "Entry to Aarey is free. Whether Picnic Point itself charges is not established, and Chhota Kashmir's boating charge is described only as nominal. Carry small change."
+      },
+      "duration_minutes": 120,
+      "how_to_get_there": {
+        "nearest_station": "Goregaon",
+        "line": "western",
+        "walk_minutes": 30,
+        "best_bus": null,
+        "note": "Goregaon on Western, then a rickshaw into the colony — Picnic Point is well inside and past Chhota Kashmir, so walking the whole way from the station is a long haul in the rain."
+      },
+      "monsoon_safe": "conditional",
+      "monsoon_note": "Outdoors and unsheltered, but monsoon is precisely when it is worth going. Fine in steady rain with the right shoes; the roads inside flood in places.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "Aarey and the adjoining national park form a documented leopard landscape; keep to roads and open garden, avoid forest edges at dawn and dusk, and do not go deep in alone. The colony is large, thinly policed and poorly lit after dark. Leopard-specific official guidance was not sourced here.",
+      "accessibility": "The garden and the metalled roads are broadly flat, but the site is large, unevenly surfaced and waterlogged in places during monsoon.",
+      "toilet_nearby": null,
+      "photography_allowed": "yes",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "08:00-11:00": "light",
+        "11:00-17:00": "busy",
+        "17:00-19:00": "light"
+      },
+      "underrated_basis": [
+        "local-patronage",
+        "needs-local-knowledge"
+      ],
+      "confidence": "medium",
+      "confidence_note": "Picnic Point's 08:00-19:00 hours, its location past Chhota Kashmir, free colony entry and the monsoon birdlife are corroborated by two sources. Any entry charge at Picnic Point itself is unverified, and the leopard caution is general knowledge of the Aarey-SGNP landscape rather than a sourced safety instruction.",
+      "sources": [
+        {
+          "url": "https://www.mumbai77.com/city/4371/attractions/aarey-colony-goregaon/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "what_it_is",
+            "geo.osm_query"
+          ],
+          "note": "Picnic Point 08:00-19:00 seven days, Dinkarrao Desai Road past Chhota Kashmir, boating, colony size."
+        },
+        {
+          "url": "https://www.tripadvisor.in/Attraction_Review-g304554-d8520486-Reviews-Aarey_Colony-Mumbai_Maharashtra.html",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "season.note",
+            "why_locals_rate_it",
+            "monsoon_note"
+          ],
+          "note": "Monsoon as the best season; birdwatching; the colony as green space for city residents."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "kanheri-caves-sgnp",
+      "name": "Kanheri Caves",
+      "name_local": "कान्हेरी लेणी",
+      "cluster": "day-trips",
+      "type": [
+        "heritage",
+        "nature"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Kanheri Caves, Sanjay Gandhi National Park, Borivali East, Mumbai 400066",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "More than a hundred rock-cut Buddhist cells, halls and cisterns cut into a basalt hillside inside Sanjay Gandhi National Park, with carved stupas and inscriptions across several centuries of use.",
+      "why_locals_rate_it": "In monsoon the rock streams with water and the surrounding forest closes in, and because it sits inside a national park an hour and a half from town most visitors treat the park as the destination and never climb up here.",
+      "insider_rules": [
+        "Closed Mondays — which rules it out on both 10 and 17 August, the arrival and departure days of this trip.",
+        "Last entry is around 16:30 against a 17:00 close, and the caves are a climb from the park gate, so arriving after 15:00 is not worth it.",
+        "The park gate fee and the Kanheri ticket are separate charges. Budget for both and carry cash.",
+        "Basalt steps in monsoon are genuinely slippery and there are unfenced drops between cave levels. Closed shoes with grip, not sandals."
+      ],
+      "hours": {
+        "known": true,
+        "windows": [
+          {
+            "open": "07:30",
+            "close": "17:00",
+            "note": "Last entry reported at about 16:30."
+          }
+        ],
+        "closed_days": [
+          "mon"
+        ],
+        "closed_days_verified": true,
+        "note": "07:30-17:00 with a Monday closure. Sources conflict on WHAT closes on Monday — one states the caves close, another that the whole park closes for maintenance. Either way Monday is out; which of the two it is remains unresolved."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Open year-round. Monsoon is scenically the best and underfoot the worst: green forest, running water, and slippery rock paths."
+      },
+      "cost": {
+        "avg_paise": 1500,
+        "band": "under-100",
+        "cash_only": null,
+        "note": "Rs 15 for an Indian visitor at Kanheri, Rs 200 for a foreign national. This is the CAVE ticket only — the Sanjay Gandhi National Park gate fee is charged separately and was not sourced, so budget more than this figure."
+      },
+      "duration_minutes": 180,
+      "how_to_get_there": {
+        "nearest_station": "Borivali",
+        "line": "western",
+        "walk_minutes": 20,
+        "best_bus": null,
+        "note": "Borivali on Western, then a rickshaw to the park gate, then roughly 6 km inside the park to the caves by park bus or on foot. From the city core this is a half-day each way in monsoon traffic. Filed under day-trips because Borivali has no cluster of its own and this is a full-day outing despite being inside city limits."
+      },
+      "monsoon_safe": "conditional",
+      "monsoon_note": "Monsoon is the reason to go and the reason to be careful. Rock-cut caves give shelter; the climb between them does not, and the steps are slick.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "Slippery basalt steps, unfenced level changes and forest paths in a park with documented leopard presence. Do not linger towards closing, do not leave marked paths, and go with someone rather than alone. Mobile coverage inside the park is patchy.",
+      "accessibility": "Poor. The caves are reached by a long climb of uneven rock-cut steps with no step-free alternative.",
+      "toilet_nearby": null,
+      "photography_allowed": "yes",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "07:30-10:00": "light",
+        "10:00-15:00": "busy",
+        "15:00-17:00": "light"
+      },
+      "underrated_basis": [
+        "needs-local-knowledge",
+        "hyper-specific"
+      ],
+      "confidence": "medium",
+      "confidence_note": "Hours, the Monday closure and the Rs 15 / Rs 200 cave fees are corroborated. Two things are unresolved: whether Monday closes the caves or the whole park, and what the separate park gate fee is — so the total cost of the day is not established here.",
+      "sources": [
+        {
+          "url": "https://sanjaygandhinationalpark.com/kanheri-caves-borivali/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "hours.closed_days",
+            "cost.avg_paise"
+          ],
+          "note": "07:30-17:00, last entry 16:30, closed Mondays, Rs 15 Indian / Rs 200 foreign."
+        },
+        {
+          "url": "https://www.tripadvisor.com/Attraction_Review-g304554-d1204502-Reviews-Kanheri_Caves-Mumbai_Maharashtra.html",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "insider_rules",
+            "safety_notes"
+          ],
+          "note": "The caves themselves, the climb, and conditions underfoot."
+        },
+        {
+          "url": "https://sanjaygandhinationalpark.com/sanjay-gandhi-national-park-entry-fees/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "cost.note"
+          ],
+          "note": "Park fee structure is separate from the Kanheri ticket; consulted but the gate figure was not established."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "shivaji-park-dadar",
+      "name": "Shivaji Park",
+      "name_local": "शिवाजी पार्क",
+      "cluster": "dadar",
+      "type": [
+        "walk",
+        "experience"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Shivaji Park, Dadar West, Mumbai 400028",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "Mumbai's largest maidan, laid out in 1925 in Dadar West and ringed by a low perimeter wall — the katta — and a walking track. A cricket nursery that produced Tendulkar, Kambli, Rahane and Shaw.",
+      "why_locals_rate_it": "The katta is the actual institution: people sit on it for hours, and the ground has carried Maharashtra's political and social gatherings for a century, so at 06:00 it belongs to walkers and coaching camps rather than to visitors.",
+      "insider_rules": [
+        "Come between 05:00 and 09:00. The perimeter track fills with walkers and the coaching nets start up, and it is the one time of day the ground is doing what it is for.",
+        "Sit on the katta rather than walking laps if you want to understand the place — that is where the neighbourhood actually is.",
+        "Cricket coaching camps use the ground in the morning and late afternoon. Watch from the edge; do not walk across active nets.",
+        "It is a fifteen-minute walk from Dadar station, which makes it the obvious first stop off an early train."
+      ],
+      "hours": {
+        "known": true,
+        "always_open": true,
+        "note": "An open public maidan with no gate. Sources describe 05:00-21:00 as the useful window rather than an enforced one; early morning and evening are the times worth coming."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Year-round. In monsoon the ground turns to mud and cricket largely stops, but the perimeter track and the katta still work."
+      },
+      "cost": {
+        "avg_paise": 0,
+        "band": "free",
+        "cash_only": null,
+        "note": "Public ground."
+      },
+      "duration_minutes": 45,
+      "how_to_get_there": {
+        "nearest_station": "Dadar",
+        "line": "central",
+        "walk_minutes": 15,
+        "best_bus": null,
+        "note": "Dadar is on both Western and Central; the park is on the western side. This is the inbound train's arrival station, so it needs no separate journey on day one."
+      },
+      "monsoon_safe": "conditional",
+      "monsoon_note": "Open ground with trees at the edge and no real shelter. The outfield becomes mud in August; the paved perimeter track remains usable.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "A large, busy, overlooked public maidan in a residential neighbourhood, well used from before dawn. Comfortable alone, including for women, during the morning and evening walking hours. Emptier and less lit late at night.",
+      "accessibility": "The perimeter walking track is flat and paved, which makes it one of the more accessible entries in this dataset. The outfield is uneven and unusable in monsoon.",
+      "toilet_nearby": null,
+      "photography_allowed": "yes",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "05:00-07:00": "busy",
+        "07:00-09:00": "busy",
+        "09:00-17:00": "light",
+        "17:00-21:00": "packed"
+      },
+      "pairs_with": [
+        "dadar-flower-market",
+        "dadar-parsi-colony-walk"
+      ],
+      "underrated_basis": [
+        "local-patronage",
+        "hyper-specific"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://memumbai.com/shivaji-park/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "why_locals_rate_it"
+          ],
+          "note": "1925 layout, the political and sporting history, the cricketers trained here."
+        },
+        {
+          "url": "https://sceneloc8.com/location/shivaji-park/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "insider_rules"
+          ],
+          "note": "The katta as the perimeter hangout and the walking track around the ground."
+        },
+        {
+          "url": "https://www.holidify.com/places/mumbai/shivaji-park-sightseeing-125057.html",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours",
+            "insider_rules"
+          ],
+          "note": "05:00-21:00 as the useful window; early morning and evening as the best times."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
+    },
+    {
+      "id": "asthika-samaj-matunga",
+      "name": "Asthika Samaj (Kochu Guruvayoor)",
+      "name_local": null,
+      "cluster": "matunga",
+      "type": [
+        "religious",
+        "heritage"
+      ],
+      "geo": {
+        "status": "unresolved",
+        "lat": null,
+        "lng": null,
+        "osm_query": "Asthika Samaj Sree Ram Mandir, Bhandarkar Road, Matunga East, Mumbai 400019",
+        "source": null,
+        "resolved_at": null,
+        "precision": null
+      },
+      "what_it_is": "A Malayali Hindu temple on Bhandarkar Road, known locally as Kochu Guruvayoor and dedicated to Rama. Reported as over a century old, with morning and evening darshan and a Kerala ritual calendar.",
+      "why_locals_rate_it": "It anchors Matunga's Malayali community the way the neighbourhood's Tamil institutions anchor theirs, and it opens at 05:00 — so it is awake before the rest of the city and the early sitting is entirely residents.",
+      "insider_rules": [
+        "Opens at 05:00 and shuts around midday before reopening late afternoon. The 05:00-07:00 window is the one worth taking and the only one available off an early train.",
+        "It is on the same street as Ram Ashraya, so temple then breakfast is a five-minute walk, in that order.",
+        "Kerala temple etiquette applies: remove footwear and leave it at the stand, dress modestly, and expect restrictions on photography inside.",
+        "Festival days transform the place and the crowd. Check the temple's own calendar before assuming a quiet visit."
+      ],
+      "hours": {
+        "known": true,
+        "windows": [
+          {
+            "open": "05:00",
+            "close": "12:00",
+            "note": "Morning darshan."
+          },
+          {
+            "open": "16:30",
+            "close": "21:00",
+            "note": "Evening darshan."
+          }
+        ],
+        "closed_days": [],
+        "closed_days_verified": false,
+        "note": "Morning and evening windows as reported. Temple hours shift on festival days and during rituals, and I could not read the temple's own site from this container to confirm — treat the exact times as indicative."
+      },
+      "season": {
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "note": "Indoor and year-round. A dry stop on a wet Matunga morning."
+      },
+      "cost": {
+        "avg_paise": 0,
+        "band": "free",
+        "cash_only": null,
+        "note": "No entry charge. Offerings and specific poojas are paid separately and were not priced here."
+      },
+      "duration_minutes": 30,
+      "how_to_get_there": {
+        "nearest_station": "Matunga",
+        "line": "central",
+        "walk_minutes": 6,
+        "best_bus": null,
+        "note": "Matunga on the Central line, or King's Circle on Harbour. One stop south of Dadar, which is where the inbound train arrives."
+      },
+      "monsoon_safe": "yes",
+      "monsoon_note": "Covered and indoors once you are past the footwear stand. Works in a downpour.",
+      "diet": [
+        "not-applicable"
+      ],
+      "safety_notes": "An active neighbourhood temple on a residential street, populated from 05:00. No specific concern reported, including for a solo visitor at the early sitting. Footwear left at the stand is left at your own risk.",
+      "accessibility": "Unverified. Older Matunga religious buildings commonly have steps at the entrance and require removing footwear, so a step-free visit should not be assumed.",
+      "toilet_nearby": null,
+      "photography_allowed": "ask-first",
+      "reservation_needed": "no",
+      "crowd_level_by_time": {
+        "05:00-07:00": "light",
+        "07:00-10:00": "busy",
+        "17:00-21:00": "busy"
+      },
+      "pairs_with": [
+        "ram-ashraya-matunga",
+        "cafe-madras-matunga",
+        "five-gardens-matunga"
+      ],
+      "underrated_basis": [
+        "local-patronage",
+        "needs-local-knowledge",
+        "hyper-specific"
+      ],
+      "confidence": "medium",
+      "confidence_note": "The temple's existence, location on Bhandarkar Road, Malayali community role and century-plus age are corroborated across three sources including a news report. The darshan times come from a single secondary write-up and the temple's own site could not be read from here, so the hours are the shaky field.",
+      "sources": [
+        {
+          "url": "http://www.asthikasamajmatunga.com/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is",
+            "geo.osm_query"
+          ],
+          "note": "The temple's own site, seen only as a search result — NOT directly read, because this container cannot fetch pages. Confirms name, Matunga location and festival calendar."
+        },
+        {
+          "url": "https://www.buzinessbytes.com/travel/things-to-know-about-asthika-samaj/",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "hours.windows",
+            "what_it_is",
+            "why_locals_rate_it"
+          ],
+          "note": "Darshan 05:00-12:00 and 16:30-21:00; Bhandarkar Road; Kochu Guruvayoor name."
+        },
+        {
+          "url": "https://www.freepressjournal.in/mumbai/mumbai-news-102-year-old-asthika-samaj-temple-in-matunga-to-hold-mahakumbhabhishekam-of-rama-hanuman-idols-from-may-711",
+          "retrieved": "2026-07-30",
+          "supports": [
+            "what_it_is"
+          ],
+          "note": "News report giving the temple's age as 102 years and its dedication to Rama and Hanuman."
+        }
+      ],
+      "last_reviewed": "2026-07-30"
     }
   ]
 }

@@ -52,6 +52,19 @@ CLAIM_FIELDS = ["hours", "cost", "geo"]
 
 DAYS = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
 
+# Listing aggregators. They are usable as sources — often they are the only thing that carries an
+# address or a phone number — but they copy each other and go stale, and a restaurant's hours on
+# one of these is frequently wrong. VERIFICATION.md's stated method caps an entry at `medium`
+# when an aggregator is all it has; this list is what makes that rule executable rather than
+# aspirational.
+AGGREGATOR_HOSTS = [
+    "zomato.com", "tripadvisor.", "justdial.com", "holidify.com", "magicpin.in",
+    "travelsetu.com", "triphobo.com", "makemytrip.com", "eazydiner.com", "swiggy.com",
+    "wanderlog.com", "trawell.in", "tourtravelworld.com", "transindiatravels.com",
+    "airial.travel", "wanderboat.ai", "mindtrip.ai", "district.in", "agoda.com",
+    "trip.com", "optfind.com", "goa.app", "top-rated.online", "worldorgs.com",
+]
+
 
 class Report:
     def __init__(self) -> None:
@@ -201,6 +214,41 @@ def check_sources(p: dict, r: Report) -> None:
 
     if p.get("confidence") in ("medium", "low") and not p.get("confidence_note"):
         r.error(pid, f"confidence is {p['confidence']!r} with no confidence_note")
+
+    check_confidence_is_earned(p, sources, r)
+
+
+def check_confidence_is_earned(p: dict, sources: list[dict], r: Report) -> None:
+    """`high` has to mean corroborated, not merely asserted.
+
+    VERIFICATION.md states the method: two independent sources agreeing raises an entry to
+    `high`; a single listing aggregator caps it at `medium`. Until this check existed that was a
+    promise in a document, which is the same shape of problem as trusting good intentions about
+    opening hours. The dataset is written by several researchers in parallel and confidence is the
+    field with the weakest natural feedback — nothing bites when it is overstated, which is
+    exactly why it needs a gate.
+    """
+    pid = p["id"]
+    if p.get("confidence") != "high":
+        return
+
+    distinct = {s.get("url", "").split("//", 1)[-1].split("/", 1)[0].lower() for s in sources}
+    distinct.discard("")
+    if len(distinct) < 2:
+        r.error(
+            pid,
+            f"confidence is 'high' on {len(distinct)} distinct source host(s). The stated method "
+            "requires two independent sources agreeing — downgrade to 'medium' with a "
+            "confidence_note, or add the corroborating source.",
+        )
+        return
+
+    if all(any(host in d for host in AGGREGATOR_HOSTS) for d in distinct):
+        r.error(
+            pid,
+            "confidence is 'high' but every source is a listing aggregator. Aggregators copy "
+            "each other, so two of them agreeing is one source. Cap at 'medium'.",
+        )
 
 
 def check_underrated(p: dict, r: Report) -> None:
