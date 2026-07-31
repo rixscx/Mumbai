@@ -39,12 +39,25 @@ this file gets the one documented command that produces a signed AAB from a clea
 ```bash
 python3 tools/validate_places.py                 # the anti-fabrication gate; fails the build
 python3 tools/merge_entries.py NEW.json --dry-run # ingest a research pass, checking ids and refs
+python3 tools/build_preview.py                   # regenerate preview/index.html from the dataset
 python3 tools/resolve_geo.py                     # needs network: fills lat/lng from OSM objects
 ```
 
 Every coordinate in the dataset is currently `null` by design — `resolve_geo.py` has never been able
 to run here, and a typed-in coordinate is a fabricated address. Run it on a networked machine and
 hand-check the pins before trusting the map.
+
+### Seeing it without an Android device
+
+[`preview/index.html`](preview/index.html) is a single self-contained page — open it in any browser,
+no server needed. It renders the §7 palette, type roles, Fare Meter and the Places/Detail wireframes
+against the real dataset, and its closed-on-a-given-day logic runs off each entry's own
+`hours.closed_days`, so picking Mon 10 Aug really does strike out the four places that are shut.
+
+It exists because ADR-009 means the Compose UI cannot be built or looked at in this container, so the
+design would otherwise go unreviewed until someone with an Android machine ran it. **It is not the
+app**: no Kotlin, nothing compiled, and it proves nothing about the Android build. Regenerate it with
+`tools/build_preview.py` after any dataset change; `--check` fails if it is stale.
 
 ## Planned stack
 
