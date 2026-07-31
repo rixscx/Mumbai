@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mumbai</title>
+<meta name="description" content="Offline-first Mumbai trip companion: log every rupee in seconds, and carry the checklist locals actually use.">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#17150F" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F2F3F1" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Mumbai">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="appbar">
+  <div class="appbar-in">
+    <div class="appbar-title">
+      <h1 id="pageTitle">Today</h1>
+      <p id="pageSub"></p>
+    </div>
+    <div class="appbar-act">
+      <button id="offlineDot" class="dot" type="button" title="Connection status" aria-live="polite"></button>
+      <a class="iconbtn" href="#/settings" aria-label="Settings" title="Settings">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-2.9 1.2 2 2 0 1 1-4 0 1.7 1.7 0 0 0-2.9-1.2l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1A1.7 1.7 0 0 0 3 15a2 2 0 1 1 0-4 1.7 1.7 0 0 0 1.4-2.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1A1.7 1.7 0 0 0 10 4a2 2 0 1 1 4 0 1.7 1.7 0 0 0 2.9 1.4l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1A1.7 1.7 0 0 0 21 11a2 2 0 1 1 0 4z"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1"></main>
+
+<nav class="tabs" aria-label="Sections">
+  <a href="#/" data-tab="/">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2-7 3 14 3-9 2 2h4"/></svg>
+    <span>Today</span></a>
+  <a href="#/expenses" data-tab="/expenses">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h9l3 3v13H6z"/><path d="M9 9h6M9 13h6M9 17h3"/></svg>
+    <span>Money</span></a>
+  <a href="#/places" data-tab="/places">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h3M4 12h3M4 18h3"/><path d="M10 6h10M10 12h10M10 18h10"/></svg>
+    <span>Places</span></a>
+  <a href="#/itinerary" data-tab="/itinerary">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v15H5z"/><path d="M9 3v4M15 3v4M5 10h14"/></svg>
+    <span>Days</span></a>
+  <a href="#/trip" data-tab="/trip">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V9M10 19V5M15 19v-7M20 19v-4"/></svg>
+    <span>Trip</span></a>
+</nav>
+
+<button id="fab" class="fab" type="button" aria-label="Log an expense">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+</button>
+
+<!-- expense editor: one sheet for both add and edit -->
+<div id="sheetWrap" class="sheetwrap" hidden>
+  <div class="sheet-bg" data-close></div>
+  <section class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <div class="sheet-grab"></div>
+    <div class="sheet-head">
+      <h2 id="sheetTitle">Log an expense</h2>
+      <button class="iconbtn" type="button" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="sheet-body">
+      <output id="amtOut" class="amt" aria-live="polite">₹0</output>
+      <p id="amtCtx" class="amt-ctx"></p>
+
+      <div id="quickCats" class="chips" aria-label="Recent categories"></div>
+
+      <div class="field">
+        <label for="fCat">Category</label>
+        <select id="fCat"></select>
+      </div>
+      <div class="grid2">
+        <div class="field">
+          <label for="fDate">Date</label>
+          <input id="fDate" type="date">
+        </div>
+        <div class="field">
+          <label for="fMethod">Paid by</label>
+          <select id="fMethod">
+            <option value="cash">Cash</option>
+            <option value="upi">UPI</option>
+            <option value="card">Card</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="fPlace">Linked place <span class="opt">optional</span></label>
+        <select id="fPlace"></select>
+      </div>
+      <div class="field">
+        <label for="fNote">Note <span class="opt">optional</span></label>
+        <input id="fNote" type="text" maxlength="140" placeholder="What was it?">
+      </div>
+    </div>
+    <div class="pad" id="pad"></div>
+    <div class="sheet-foot">
+      <button id="delBtn" class="btn ghost danger" type="button" hidden>Delete</button>
+      <button id="saveBtn" class="btn primary" type="button">Save</button>
+    </div>
+  </section>
+</div>
+
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "Mumbai — trip companion",
+  "short_name": "Mumbai",
+  "description": "Log every rupee in seconds, and carry the checklist of Mumbai that locals actually use. Works with no network.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#17150F",
+  "theme_color": "#17150F",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "categories": ["travel", "finance", "utilities"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Log an expense", "url": "./#/expenses" },
+    { "name": "Places checklist", "url": "./#/places" },
+    { "name": "Today's plan", "url": "./#/itinerary" }
+  ]
+}
