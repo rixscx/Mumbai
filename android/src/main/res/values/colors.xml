@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- surface.ink from docs/PHASE-0-ALIGNMENT.md §7 — the Premier Padmini body black, warm not
+         neutral. Duplicated here (and only here) because a pre-Compose window needs a real colour
+         resource; Compose reads the same value from ui/Theme.kt. -->
+    <color name="ink">#17150F</color>
+</resources>

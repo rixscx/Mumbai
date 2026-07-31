@@ -34,30 +34,62 @@ Read, in order:
 `ARCHITECTURE.md` arrives with the D2 record. Build instructions arrive with M0, at which point
 this file gets the one documented command that produces a signed AAB from a clean clone.
 
-### Working on the dataset
+## Layout
+
+| Path | What it is | Verified where |
+|---|---|---|
+| `data/` | The curated dataset and its schema. The source of truth. | `tools/validate_places.py`, locally and in CI |
+| `domain/` | Kotlin, **JVM-only, zero Android imports**. Money, the hours engine, category roll-ups, budget projection. | **53 unit tests, run locally and in CI** |
+| `android/` | The Kotlin + Compose app (`:android`). | CI only — no Android SDK here (ADR-009) |
+| `web/` | An installable PWA. Same dataset, works offline, runs today. | Driven in headless Chromium: 38 checks |
+| `preview/` | A one-page design/data review surface. | Rendered and screenshotted |
+| `tools/` | Validators and generators. | CI runs all of them with `--check` |
+
+**Two front-ends is a deliberate, temporary state, not indecision.** ADR-001 commits to Kotlin +
+Compose and that has not changed. But ADR-009 means the Compose UI cannot be compiled, run or
+screenshotted in the authoring container, and the trip boards on 09 August — so `web/` is what
+actually reaches the phone this week while `android/` is built and verified by CI. `domain/` is
+shared: the logic is written and tested once, in Kotlin, and both front-ends implement the same
+rules. The web app is expected to be retired once the Compose app carries the same features.
+
+### Working on it
 
 ```bash
-python3 tools/validate_places.py                 # the anti-fabrication gate; fails the build
+python3 tools/validate_places.py                  # the anti-fabrication gate; fails the build
 python3 tools/merge_entries.py NEW.json --dry-run # ingest a research pass, checking ids and refs
-python3 tools/build_preview.py                   # regenerate preview/index.html from the dataset
-python3 tools/resolve_geo.py                     # needs network: fills lat/lng from OSM objects
+python3 tools/build_app_data.py                   # regenerate web/ + android/ assets and icons
+python3 tools/build_preview.py                    # regenerate preview/index.html
+python3 tools/resolve_geo.py                      # needs network: fills lat/lng from OSM objects
+
+./gradlew :domain:test        # 53 tests. Runs anywhere, including with no Android SDK.
+./gradlew :android:assembleDebug   # needs an Android SDK; otherwise CI does it
 ```
+
+`settings.gradle.kts` only includes `:android` when an SDK is actually present, so a clone without
+one still runs the domain tests rather than failing at configuration time.
 
 Every coordinate in the dataset is currently `null` by design — `resolve_geo.py` has never been able
 to run here, and a typed-in coordinate is a fabricated address. Run it on a networked machine and
 hand-check the pins before trusting the map.
 
-### Seeing it without an Android device
+### Getting it onto a phone
+
+**The APK comes from CI, not from here.** Open the latest green run of
+[`.github/workflows/ci.yml`](.github/workflows/ci.yml) and download the `mumbai-debug-apk` artifact.
+The release APK is built too but is left **unsigned on purpose**: ADR-008 wants release-signed for an
+app holding money and location data, and signing with the debug key would be release-signed in name
+only. Signing lands when a keystore secret exists.
+
+**The web app installs today.** Serve `web/` over https (or `http://localhost`) and use Chrome's
+*Add to Home Screen*; it gets its own icon, launches without browser chrome, and works with no
+network. `python3 -m http.server -d web 8000` is enough to try it locally.
+
+### Seeing the design without a device
 
 [`preview/index.html`](preview/index.html) is a single self-contained page — open it in any browser,
-no server needed. It renders the §7 palette, type roles, Fare Meter and the Places/Detail wireframes
-against the real dataset, and its closed-on-a-given-day logic runs off each entry's own
-`hours.closed_days`, so picking Mon 10 Aug really does strike out the four places that are shut.
-
-It exists because ADR-009 means the Compose UI cannot be built or looked at in this container, so the
-design would otherwise go unreviewed until someone with an Android machine ran it. **It is not the
-app**: no Kotlin, nothing compiled, and it proves nothing about the Android build. Regenerate it with
-`tools/build_preview.py` after any dataset change; `--check` fails if it is stale.
+no server needed. It renders the §7 palette, the Fare Meter and the Places/Detail wireframes against
+the real dataset. **It is not the app**: nothing compiled, and it proves nothing about the Android
+build. Regenerate with `tools/build_preview.py`; `--check` fails if it is stale.
 
 ## Planned stack
 

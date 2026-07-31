@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""Generate the installable app's static assets from the curated dataset.
+"""Generate the installable web app's static assets, and the Android module's assets.
 
-The app in app/ is hand-written source, not generated — only its *data* and its icons come from
+The app in web/ is hand-written source, not generated — only its *data* and its icons come from
 here, plus the service-worker cache version, which has to change whenever a precached file changes
 or phones will serve a stale app forever.
 
-  app/places.json   the curated dataset, stripped to the fields the UI actually reads
-  app/trip.json     trip dates, the itinerary, the seed category tree, the two real ticket fares
-  app/icons/*.png   written with a minimal PNG encoder (no Pillow in this container)
-  app/sw.js         CACHE version line rewritten from a hash of the precached files
+  web/places.json   the curated dataset, stripped to the fields the UI actually reads
+  web/trip.json     trip dates, the itinerary, the seed category tree, the two real ticket fares
+  web/icons/*.png   written with a minimal PNG encoder (no Pillow in this container)
+  web/sw.js         CACHE version line rewritten from a hash of the precached files
 
 Nothing here invents data. The two ticket fares are the real ones off the IRCTC slips and they are
 offered to the user as an optional import rather than seeded silently, because the user asked for
@@ -32,7 +32,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PLACES_SRC = ROOT / "data" / "places.mumbai.json"
 FARES_SRC = ROOT / "data" / "fares.mumbai.json"
-APP = ROOT / "app"
+WEB = ROOT / "web"
+ANDROID_ASSETS = ROOT / "android" / "src" / "main" / "assets"
 
 # Fields the UI reads. Everything else in the entry (underrated_basis, diet flags we don't surface
 # yet) is dropped to keep the payload small — this is the whole dataset on a phone, over a hotel
@@ -214,12 +215,12 @@ def stamp_sw() -> str:
     """
     h = hashlib.sha256()
     for name in PRECACHE:
-        f = APP / name
+        f = WEB / name
         h.update(name.encode())
         h.update(f.read_bytes() if f.exists() else b"")
     ver = h.hexdigest()[:12]
 
-    sw = APP / "sw.js"
+    sw = WEB / "sw.js"
     lines = sw.read_text().splitlines(keepends=True)
     for i, line in enumerate(lines):
         if line.startswith("const CACHE ="):
@@ -251,9 +252,13 @@ def main() -> int:
         print(f"ERROR seed expenses use unknown categories: {sorted(bad_cats)}", file=sys.stderr)
         return 1
 
+    places_json = json.dumps(build_places(), ensure_ascii=False, separators=(",", ":")) + "\n"
     targets = {
-        APP / "places.json": json.dumps(build_places(), ensure_ascii=False, separators=(",", ":")) + "\n",
-        APP / "trip.json": json.dumps(build_trip(), ensure_ascii=False, separators=(",", ":")) + "\n",
+        WEB / "places.json": places_json,
+        # The Android module reads the same bytes from assets, so the two front-ends can never
+        # drift apart on what the dataset says.
+        ANDROID_ASSETS / "places.json": places_json,
+        WEB / "trip.json": json.dumps(build_trip(), ensure_ascii=False, separators=(",", ":")) + "\n",
     }
 
     if args.check:
@@ -264,20 +269,21 @@ def main() -> int:
         print("app data up to date")
         return 0
 
-    APP.mkdir(parents=True, exist_ok=True)
+    WEB.mkdir(parents=True, exist_ok=True)
     for path, content in targets.items():
+        path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(content)
         print(f"wrote {path.relative_to(ROOT)} ({len(content):,} bytes)")
 
-    png(APP / "icons" / "icon-192.png", 192, 0.14)
-    png(APP / "icons" / "icon-512.png", 512, 0.14)
-    png(APP / "icons" / "maskable-512.png", 512, 0.22)
+    png(WEB / "icons" / "icon-192.png", 192, 0.14)
+    png(WEB / "icons" / "icon-512.png", 512, 0.14)
+    png(WEB / "icons" / "maskable-512.png", 512, 0.22)
     print("wrote 3 icons")
 
-    if (APP / "sw.js").exists():
+    if (WEB / "sw.js").exists():
         print(f"stamped sw.js cache version: mumbai-{stamp_sw()}")
     else:
-        print("note: app/sw.js not present yet, skipped version stamp")
+        print("note: web/sw.js not present yet, skipped version stamp")
     return 0
 
 
