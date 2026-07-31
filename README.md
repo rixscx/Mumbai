@@ -84,6 +84,12 @@ only. Signing lands when a keystore secret exists.
 *Add to Home Screen*; it gets its own icon, launches without browser chrome, and works with no
 network. `python3 -m http.server -d web 8000` is enough to try it locally.
 
+**Or just open one file.** `python3 tools/bundle_web.py` writes
+[`web/standalone.html`](web/standalone.html) — the whole app with the CSS, JS and dataset inlined and
+**zero external requests**, so it runs straight off `file://`. Expenses really are saved (IndexedDB),
+but there is no service worker and no manifest in that build, so no offline precache and no
+install-to-home-screen. It is for trying the app, not for carrying it to Mumbai.
+
 ### Seeing the design without a device
 
 [`preview/index.html`](preview/index.html) is a single self-contained page — open it in any browser,

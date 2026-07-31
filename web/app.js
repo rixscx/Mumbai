@@ -128,9 +128,16 @@ const S = {
 };
 
 async function loadAll() {
+  // The dataset normally sits next to this file. tools/bundle_web.py can instead inline it into
+  // <script type="application/json"> tags, which is what makes a single-file build work from
+  // file:// or a sandbox where relative fetches are blocked. Same code path either way.
+  const embedded = id => {
+    const el = document.getElementById(id);
+    return el ? JSON.parse(el.textContent) : null;
+  };
   const [places, trip] = await Promise.all([
-    fetch("places.json").then(r => r.json()),
-    fetch("trip.json").then(r => r.json()),
+    embedded("data-places") ?? fetch("places.json").then(r => r.json()),
+    embedded("data-trip") ?? fetch("trip.json").then(r => r.json()),
   ]);
   S.places = places.places;
   S.licence = places.licence;

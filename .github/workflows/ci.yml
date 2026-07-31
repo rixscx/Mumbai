@@ -165,6 +165,9 @@ jobs:
           console.log(`${listed.length} precached files all present`);
           JS
 
+      - name: Single-file bundle is not stale
+        run: python3 tools/bundle_web.py --check
+
       - name: Syntax-check the app sources
         run: |
           node --check web/app.js
@@ -172,6 +175,7 @@ jobs:
           node -e "JSON.parse(require('fs').readFileSync('web/manifest.webmanifest'))"
           node -e "JSON.parse(require('fs').readFileSync('web/places.json'))"
           node -e "JSON.parse(require('fs').readFileSync('web/trip.json'))"
+          test -s web/standalone.html
 
       - name: Upload the web app
         uses: actions/upload-artifact@v4
